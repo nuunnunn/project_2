@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+#wrap{ 
+    width: 100%; height: auto;
+}
+
+
+header{ 
+    width: 100%; height: auto; position: fixed; z-index: 1;
+}
+#menu{ display: flex; justify-content: space-between; flex-direction: row-reverse;
+    width: 100%; height: 80px;padding: 24px 50px; 
+    transition: all 2s ease-in-out; 
+}
+#menu ul{
+    cursor: pointer; display: flex; align-items: center; width: 5%;
+    justify-content: space-around;
+}
+#menu ul li i{
+    color: #f6f5f1; font-size: 20px; 
+}
+#menu.fixed{
+    background: #f6f5f1; position: fixed; border-bottom: 1px solid #999;
+    flex-direction: row;
+}
+#menu ul li .txtch{color: #333;}
+#menu ul .show{display: none;}
+#menu ul img{display: none;}
+
+
+#slider{ width: 100%; height: 600px; overflow: hidden; position: sticky;
+    top: 0px;
+}
+#slider video{ width: 100%; height: auto; margin-top: -135px;
+}
+#slider p{ position: absolute; font-size: 70px; top: 450px; left: 40px; color: #fff;
+    font-family: 'Pangolin', cursive;
+}
+
+
+
+
+
+section{ position: relative;
+    width: 100%;  background: #f6f5f1; 
+}
+
+
+section #sewrapone{ width: 100%; height: 765px; background: #f6f5f1; display: flex; 
+    flex-wrap: wrap;
+}
+section #articlewrap{ width: 82%;
+    display: flex; flex-direction: column;
+}
+#articlewrap #artione{ width: 100%; height: 30%; border-style: none solid solid none; 
+    border-width: 1px; border-color: #999; display: flex; flex-wrap: wrap;
+}
+#artione .inner{
+    width: 90%; height: 100%;
+}
+#artione .inner p:first-of-type{height: 50%; font-size: 15px; padding: 40px 0 0 50px;
+    font-family: 'Noto Serif KR', serif; font-weight: 200; color: #999;}
+#artione .inner p:last-of-type{height: 50%; font-size: 45px; padding: 10px 0 0 50px;
+    font-family: 'Noto Serif KR', serif; font-weight: 500;
+}
+#artione .out{width: 10%; height: 100%; padding: 150px 0 0 0px; font-weight: lighter;}
+#artione .out img{width: 80px;}
+#articlewrap #artitwo{ width: 100%; height: 70%; border-style: none solid solid none; 
+    border-width: 1px; border-color: #999; display: flex;
+}
+#artitwo .imgbox{ width: 50%; height: auto; }
+#artitwo .imgbox img{ width: 97.5%; height: auto; }
+#artitwo .pbox{ width: 50%; height: 100%; background-image: url(../img/main/circle.png);
+    padding: 30px 0 0 30px; background-position: center; background-size: cover;
+}
+#artitwo .pbox p{font-family: 'Noto Serif KR', serif;  
+    line-height: 30px;
+}
+#sewrapone #asione{ width: 18%; height: 100%; border-bottom: 1px solid #999;
+}
+
+
+section #banner{
+    width: 100%; height: 355px; border-bottom: 1px solid #999; 
+    background-image: url(../img/main/wash_.png); background-position: center;
+    background-size: cover; display: flex; align-items: center; justify-content: center;
+}
+section #banner p{ font-family: 'Pangolin', cursive; font-size: 60px;}
+
+
+#sewraptwo{width: 100%; height: 460px; display: flex;}
+#sewraptwo #asitwo{border-bottom: 1px solid #999; width: 40%; 
+    display: flex;
+}
+#asitwo .asitwop{width: 80%; display: flex; flex-wrap: wrap;}
+#asitwo .asitwop p:first-of-type{width: 100%; height: 60%; font-size: 15px; 
+    padding: 50px 0 0 50px;
+    font-family: 'Noto Serif KR', serif; font-weight: 200; color: #999;}
+#asitwo .asitwop p:last-of-type{width: 100%; height: 40%; font-size: 45px;
+    font-family: 'Noto Serif KR', serif; font-weight: 500; padding: 70px 0 0 50px;
+}
+#asitwo .asitwoimg{width: 20%; padding: 60px 0 0 70px;}
+#asitwo .asitwoimg img{ width: 45px; height: auto;
+}
+#sewraptwo #articlewraptwo{width: 60%; display: flex; flex-wrap: wrap;}
+#articlewraptwo #artithr{
+    width: 100%; height: 50%; border-style: none none solid solid; border-width: 1px; 
+    border-color: #999;
+}
+#artithr p:first-of-type{width: 100%; height: 50%; font-size: 15px; 
+    padding: 40px 0 0 50px;
+    font-family: 'Noto Serif KR', serif; font-weight: 200; color: #999;}
+#artithr p:last-of-type{width: 100%; height: 50%; font-size: 45px;
+    font-family: 'Noto Serif KR', serif; font-weight: 500; padding: 10px 0 0 50px;
+}
+#articlewraptwo #artifour{
+    width: 100%; height: 50%; border-style: none none solid solid; border-width: 1px; 
+    border-color: #999;
+}
+#artifour p:first-of-type{width: 100%; height: 50%; font-size: 15px; 
+    padding: 40px 0 0 50px;
+    font-family: 'Noto Serif KR', serif; font-weight: 200; color: #999;}
+#artifour p:last-of-type{width: 100%; height: 50%; font-size: 45px;
+    font-family: 'Noto Serif KR', serif; font-weight: 500; padding: 10px 0 0 50px;
+}
+
+
+#bannertwo{
+    width: 100%; height: 435px; border-bottom: 1px solid #999;
+}
+
+
+
+
+footer{
+    width: 100%; height: 390px; background: #e9e6e0; position: relative;
+    font-family: 'Noto Serif KR', serif;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAMBURINS</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Acme&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Bree+Serif&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=IBM+Plex+Sans+KR:wght@300&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Merriweather:wght@700&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Noto+Serif+KR&family=Oswald&family=Pangolin&family=Rowdies&family=Special+Elite&family=Yatra+One&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@900&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var currentScrollTop = $(window).scrollTop();
+                if (currentScrollTop > 100) {
+                    $('#menu').addClass('fixed');
+                    $('#menu li i').addClass('txtch');
+                    $('.show').show();
+                    $('#menu img').show();
+                } else {
+                    $('#menu').removeClass('fixed');
+                    $('#menu li i').removeClass('txtch');
+                    $('.show').hide();
+                    $('#menu img').hide();
+                }
+            })
+        });
+
+    </script>
+</head>
+<body>
+    <div id="wrap">
+
+        <header>
+                <nav id="menu">
+                    <img src="img/main/tamburins_logo_display_transparent.png" alt="logo">
+                    <ul>
+                        <li class="show"><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                        <li class="show"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li><i class="fa-solid fa-bars"></i></li>
+                    </ul>
+                </nav>
+        </header>
+        
+        <div id="slider">
+            <video src="img/main/TAMBURINS x JENNIE  PERFUME - [SOLACE].mp4" loop muted autoplay></video>
+            <P>TAMBURINS</P>
+        </div>
+        
+    
+
+
+
+        <section>
+
+            <article id="sewrapone">
+
+                <div id="articlewrap">
+
+                    <div id="artione">
+                        <div class="inner">
+                            <p>all product</p>
+                            <p><a href="#">SHOP</a></p>
+                        </div>
+                        <p class="out"><a href="#"><img src="img/main/arrow.png" alt="arrow"></a></p>
+                    </div>
+
+                    <div id="artitwo">
+                        <div class="imgbox"><img src="img/main/creamon_.png" alt="cream"></div>
+                        <div class="pbox">
+                            <p>
+                                세상에 흩어진 모든 이야기에서 영감을 받은 감각적인 향이 <br>
+                                단조로운 일상에 자유롭고 새로운 리듬을 부여합니다. <br>
+                                탬버린즈가 찾아낸 규정되지 않은 아름다움을 경험해보세요.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div id="asione"></div>
+
+            </article>
+
+
+
+            <div id="banner">
+                <p>Smell the colorful scents from nature</p>
+            </div>
+
+
+
+            <article id="sewraptwo">
+
+                <div id="asitwo">
+                    <div class="asitwop">
+                        <p>product story</p>
+                        <p><a href="#">SHOPPING STORY</a></p>
+                    </div>
+                    <div class="asitwoimg">
+                        <img src="img/main/tamburins_logo_coltwo.png" alt="verticallogo">
+                    </div>
+                </div>
+
+                <div id="articlewraptwo">
+                    <div id="artithr">
+                        <p>about TAMBURINS</p>
+                        <p><a href="#">NOTICE / Q & A</a></p>
+                    </div>
+
+                    <div id="artifour">
+                        <p>contact us</p>
+                        <p><a href="#">CONTACT</a></p>
+                    </div>
+                </div>
+
+            </article>
+
+            <div id="bannertwo"></div>
+        </section>
+
+        <footer>
+            <h1></h1>
+            <h4>TAMBURINS CEO 김한국</h4><br>
+            <span><b>Email</b> cs@tamburins.com&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;<b>C/S</b> 1644-1246&nbsp;&nbsp;&nbsp;&nbsp;|</span><br>
+            <span><b>Mall Order License</b> 제 2014-서울마포-1050 호 &#91;사업자정보확인&#93;&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;<b>Business License</b> 119-86-38589&nbsp;&nbsp;&nbsp;&nbsp;|</span><br>
+            <span><b>Adress</b> 서울특별시 마포구 어울마당로5길 41(41, Eoulmadang-ro 5-gil, Mapo-gu, Seoul, Republic of Korea)</span><br><br>
+            <p>© TAMBURINS KR</p>
+        </footer>
+    </div>
+</body>
+</html>
