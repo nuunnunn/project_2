@@ -24,31 +24,48 @@ section #sewrapone{ width: 100%; height: 765px; background: #f6f5f1; display: fl
 section #articlewrap{ width: calc(100% - 320px);
     display: flex; flex-direction: column;
 }
-#articlewrap #artione{ width: 100%; height: 30%; border-style: none solid solid none; 
-    border-width: 1px; border-color: #999; display: flex; flex-wrap: wrap;
+#articlewrap #artione{ width: 100%; height: 230px; border-style: none solid solid none; 
+    border-width: 1px; border-color: #999; display: flex; flex-wrap: wrap; 
+    position: relative;
 }
+#articlewrap #artione::after{content: ""; width: 100%; height: 0%; background: #111;
+    position: absolute; bottom: 0; left: 0; transition: height 0.3s ease-in-out;
+}
+#articlewrap #artione:hover::after{height: 100%;}
+#articlewrap #artione:hover p{color: #fff;}
+
 #artione .inner{
     width: 90%; height: 100%;
 }
+
 #artione .inner p:first-of-type{height: 50%; font-size: 15px; padding: 40px 0 0 50px;
-    font-family: 'Noto Serif KR', serif; font-weight: 200; color: #999;}
+    font-family: 'Noto Serif KR', serif; font-family: 'IBM Plex Sans KR', sans-serif; 
+    font-weight: 500; color: #999; position: relative;
+z-index: 3;}
 #artione .inner p:last-of-type{height: 50%; font-size: 45px; padding: 10px 0 0 50px;
-    font-family: 'Noto Serif KR', serif; font-weight: 500;
+    font-family: 'Noto Serif KR', serif; font-family: 'IBM Plex Sans KR', sans-serif;
+    font-weight: 600;position: relative; z-index: 3; 
 }
-#artione .out{width: 10%; height: 100%; padding: 150px 0 0 20px; font-weight: lighter;}
-#artione .out img{width: 80px;}
-#articlewrap #artitwo{ width: 100%; height: 70%; border-style: none solid solid none; 
+#artione .out{width: 10%; height: 100%; padding: 150px 0 0 30px; font-weight: lighter;}
+#artione .out img{width: 70px; position: relative; z-index: 3;}
+#articlewrap #artitwo{ width: 100%; height: calc(100% - 230px); border-style: none solid solid none; 
     border-width: 1px; border-color: #999; display: flex;
 }
-#artitwo .imgbox{ width: 50%; height: auto; }
-#artitwo .imgbox img{ width: 96%; height: auto; }
-#artitwo .pbox{ width: 50%; height: 100%; background-image: url(../img/main/circle.png);
-    padding: 30px 0 0 30px; background-position: center; background-size: cover;
+#artitwo .imgbox{ width: 760px; height: 535px; }
+#artitwo .imgbox img{ width: 100%; height: 100%; }
+#artitwo .pbox{ width: calc(100% - 760px); height: 100%; background-image: url(../img/main/circle.png);
+    padding: 50px 0 0 30px; background-position: center; background-size: cover;
 }
 #artitwo .pbox p{font-family: 'Noto Serif KR', serif;  
     line-height: 30px;
 }
-#sewrapone #asione{ width: 320px; height: 100%; border-bottom: 1px solid #999;
+#sewrapone #asione{ width: 320px; height: auto; border-bottom: 1px solid #999;
+    padding: 295px 0 0 70px;
+}
+#sewrapone #asione img{width: 180px; animation: rotate normal infinite 20s linear;
+}
+@keyframes rotate{
+    to{transform: rotate(360deg);}
 }
 
 
@@ -67,9 +84,11 @@ section #banner p{ font-family: 'Pangolin', cursive; font-size: 60px;}
 #asitwo .asitwop{width: 80%; display: flex; flex-wrap: wrap;}
 #asitwo .asitwop p:first-of-type{width: 100%; height: 60%; font-size: 15px; 
     padding: 50px 0 0 50px;
-    font-family: 'Noto Serif KR', serif; font-weight: 200; color: #999;}
+    font-family: 'Noto Serif KR', serif; font-family: 'IBM Plex Sans KR', sans-serif;
+    font-weight: 200; color: #999;}
 #asitwo .asitwop p:last-of-type{width: 100%; height: 40%; font-size: 45px;
-    font-family: 'Noto Serif KR', serif; font-weight: 500; padding: 70px 0 0 50px;
+    font-family: 'Noto Serif KR', serif; font-family: 'IBM Plex Sans KR', sans-serif;
+    font-weight: 600; padding: 70px 0 0 50px;
 }
 #asitwo .asitwoimg{width: 20%; padding: 60px 0 0 70px;}
 #asitwo .asitwoimg img{ width: 45px; height: auto;
@@ -81,9 +100,11 @@ section #banner p{ font-family: 'Pangolin', cursive; font-size: 60px;}
 }
 #artithr p:first-of-type{width: 100%; height: 50%; font-size: 15px; 
     padding: 40px 0 0 50px;
-    font-family: 'Noto Serif KR', serif; font-weight: 200; color: #999;}
+    font-family: 'Noto Serif KR', serif; font-family: 'IBM Plex Sans KR', sans-serif;
+    font-weight: 200; color: #999;}
 #artithr p:last-of-type{width: 100%; height: 50%; font-size: 45px;
-    font-family: 'Noto Serif KR', serif; font-weight: 500; padding: 10px 0 0 50px;
+    font-family: 'Noto Serif KR', serif; font-family: 'IBM Plex Sans KR', sans-serif;
+    font-weight: 600; padding: 10px 0 0 50px;
 }
 #articlewraptwo #artifour{
     width: 100%; height: 50%; border-style: none none solid solid; border-width: 1px; 
@@ -91,9 +112,11 @@ section #banner p{ font-family: 'Pangolin', cursive; font-size: 60px;}
 }
 #artifour p:first-of-type{width: 100%; height: 50%; font-size: 15px; 
     padding: 40px 0 0 50px;
-    font-family: 'Noto Serif KR', serif; font-weight: 200; color: #999;}
+    font-family: 'Noto Serif KR', serif; font-family: 'IBM Plex Sans KR', sans-serif;
+    font-weight: 200; color: #999;}
 #artifour p:last-of-type{width: 100%; height: 50%; font-size: 45px;
-    font-family: 'Noto Serif KR', serif; font-weight: 500; padding: 10px 0 0 50px;
+    font-family: 'Noto Serif KR', serif; font-family: 'IBM Plex Sans KR', sans-serif;
+    font-weight: 600; padding: 10px 0 0 50px;
 }
 
 

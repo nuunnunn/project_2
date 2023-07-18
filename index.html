@@ -57,18 +57,18 @@
                     $(this).toggleClass('active');
                     $('#mynav').toggleClass('right');
                     $('.menu_trigger span').toggleClass('spanch');
-
-
             })
 
+            // $('.cover').animate({height:0},1000);
 
-            // $('.menu_trigger').click(function(){
-            //     $('#mynav').css('width','30%');
-            // });
-            
-            // $('.closebtn').click(function(){
-            //     $('#mynav').css('width','0');
-            // });
+            $('#artione').hover(function(){
+                $('.arrow').attr('src','img/main/arrowwhite.png');
+            }, function(){
+                $('.arrow').attr('src','img/main/arrow.png');
+            });
+
+        
+
 
         });
 
@@ -122,13 +122,19 @@
 
                 <div id="articlewrap">
 
-                    <div id="artione">
-                        <div class="inner">
-                            <p>all product</p>
-                            <p><a href="#">SHOP</a></p>
+                    
+                    <a href="#">
+                        <div id="artione">
+                            <div class="inner">
+                                <p>all product</p>
+                                <p>SHOP</p>
+                            </div>
+                            <p class="out">
+                                <img src="img/main/arrow.png" alt="arrow" class="arrow">
+                            </p>
                         </div>
-                        <p class="out"><a href="#"><img src="img/main/arrow.png" alt="arrow"></a></p>
-                    </div>
+                    </a>
+                    
 
                     <div id="artitwo">
                         <div class="imgbox"><img src="img/main/creamon_.png" alt="cream"></div>
@@ -143,7 +149,12 @@
 
                 </div>
             
-                <div id="asione"></div>
+                <div id="asione">
+                    <!-- <img src="img/main/circletext.png" alt="circletext"> -->
+                    <!-- <img src="img/main/circletexttwo.png" alt="circletext"> -->
+                    <img src="img/main/circletextthr.png" alt="circletext">
+                    <!-- <img src="img/main/circletextfour.png" alt="circletext"> -->
+                </div>
 
             </article>
 
@@ -156,17 +167,17 @@
 
 
             <article id="sewraptwo">
-
-                <div id="asitwo">
-                    <div class="asitwop">
-                        <p>product story</p>
-                        <p><a href="#">SHOPPING STORY</a></p>
+                
+                    <div id="asitwo">
+                        <div class="asitwop">
+                            <p>product story</p>
+                            <p><a href="#">SHOPPING STORY</a></p>
+                        </div>
+                        <div class="asitwoimg">
+                            <img src="img/main/tamburins_logo_coltwo.png" alt="verticallogo">
+                        </div>
                     </div>
-                    <div class="asitwoimg">
-                        <img src="img/main/tamburins_logo_coltwo.png" alt="verticallogo">
-                    </div>
-                </div>
-
+                
                 <div id="articlewraptwo">
                     <div id="artithr">
                         <p>about TAMBURINS</p>
@@ -208,7 +219,7 @@
 
         <footer>
             <h1>Visual and tactile pleasure</h1><br>
-            <h4>TAMBURINS CEO <span>김한국</span></h4><br>
+            <h4>TAMBURINS CEO<span>김한국</span></h4><br>
             <span><b>Email</b>&nbsp;&nbsp;&nbsp;cs@tamburins.com&nbsp;&nbsp;&nbsp;&nbsp;<strong>|</strong></span>
             <span>&nbsp;&nbsp;&nbsp;&nbsp;<b>C/S</b>&nbsp;&nbsp;&nbsp;1644-1246&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
             <span><b>Mall Order License</b>&nbsp;&nbsp;&nbsp;제 2014-서울마포-1050 호 &#91;사업자정보확인&#93;&nbsp;&nbsp;&nbsp;&nbsp;<strong>|</strong></span>
