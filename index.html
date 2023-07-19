@@ -6,6 +6,10 @@
     <title>TAMBURINS</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main_largesize.css">
+    <link rel="stylesheet" href="css/main_mediumsize.css">
+    <link rel="stylesheet" href="css/main_mediumsmallsize.css">
+    <link rel="stylesheet" href="css/main_smallsize.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,18 +42,53 @@
             });
 
 
-            $('.prev').click(function () {
-                $('.slide li:last').prependTo('.slide');
-                $('.slide').css('margin-left', '-25%');
-                $('.slide').stop().animate({ marginLeft: 0 }, 800);
-            });
+            if (window.matchMedia("(min-width: 1300px)").matches) {
 
-            $('.next').click(function () {
-                $('.slide').stop().animate({ marginLeft: '-25%' }, 800, function () {
-                    $('.slide li:first').appendTo('.slide');
-                    $('.slide').css({ marginLeft: 0 });
+                $('.prev').click(function () {
+                    $('.slide li:last').prependTo('.slide');
+                    $('.slide').css('margin-left', '-25%');
+                    $('.slide').stop().animate({ marginLeft: 0 }, 800);
                 });
-            });
+
+                $('.next').click(function () {
+                    $('.slide').stop().animate({ marginLeft: '-25%' }, 800, function () {
+                        $('.slide li:first').appendTo('.slide');
+                        $('.slide').css({ marginLeft: 0 });
+                    });
+                });
+
+            } else if(window.matchMedia("(min-width:980px) and (max-width:1299px)").matches) {
+
+                $('.prev').click(function () {
+                    $('.slide li:last').prependTo('.slide');
+                    $('.slide').css('margin-left', '-33.33%');
+                    $('.slide').stop().animate({ marginLeft: 0 }, 800);
+                });
+
+                $('.next').click(function () {
+                    $('.slide').stop().animate({ marginLeft: '-33.33%' }, 800, function () {
+                        $('.slide li:first').appendTo('.slide');
+                        $('.slide').css({ marginLeft: 0 });
+                    });
+                });
+
+            }else{
+                $('.prev').click(function () {
+                    $('.slide li:last').prependTo('.slide');
+                    $('.slide').css('margin-left', '-50%');
+                    $('.slide').stop().animate({ marginLeft: 0 }, 800);
+                });
+
+                $('.next').click(function () {
+                    $('.slide').stop().animate({ marginLeft: '-50%' }, 800, function () {
+                        $('.slide li:first').appendTo('.slide');
+                        $('.slide').css({ marginLeft: 0 });
+                    });
+                });
+            }
+
+
+            
             
 
             $('.menu_trigger').on('click', function(e){
@@ -59,16 +98,11 @@
                     $('.menu_trigger span').toggleClass('spanch');
             })
 
-            // $('.cover').animate({height:0},1000);
-
             $('#artione').hover(function(){
                 $('.arrow').attr('src','img/main/arrowwhite.png');
             }, function(){
                 $('.arrow').attr('src','img/main/arrow.png');
             });
-
-        
-
 
         });
 
@@ -94,7 +128,6 @@
                     </ul>
 
                     <div id="mynav" class="overlay">
-                        <!-- <a href="javascript:void(0)" class="closebtn">&times;</a> -->
 
                         <div class="overlay-content">
                             <a href="#">HOME</a>
@@ -150,9 +183,9 @@
                 </div>
             
                 <div id="asione">
-                    <!-- <img src="img/main/circletext.png" alt="circletext"> -->
+                    <img src="img/main/circletext.png" alt="circletext">
                     <!-- <img src="img/main/circletexttwo.png" alt="circletext"> -->
-                    <img src="img/main/circletextthr.png" alt="circletext">
+                    <!-- <img src="img/main/circletextthr.png" alt="circletext"> -->
                     <!-- <img src="img/main/circletextfour.png" alt="circletext"> -->
                 </div>
 

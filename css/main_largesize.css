@@ -1,12 +1,12 @@
 @charset "utf-8";
 
-@media(min-width:1500px){
-    #slider{ width: 100%; height: 600px; overflow: hidden; position: sticky;
+@media(min-width:1300px) and (max-width:1499px){
+    #slider{ width: 100%; height: auto; overflow: hidden; position: sticky;
         top: 0px;
     }
     #slider video{ width: 100%; height: auto; margin-top: -135px;
     }
-    #slider p{ position: absolute; font-size: 70px; bottom: 30px; left: 40px; color: #fff;
+    #slider p{ position: absolute; font-size: 70px; bottom: 135px; left: 40px; color: #fff;
         font-family: 'Pangolin', cursive;
     }
 
@@ -14,8 +14,7 @@
 
 
 
-    section{ position: relative;
-        width: 100%;  background: #f6f5f1; 
+    section{ position: relative; width: 100%;  background: #f6f5f1; margin-top: -105px;
     }
 
 
@@ -39,8 +38,9 @@
     #articlewrap #artione:hover p{color: #fff;}
 
     #artione .inner{
-        width: calc(100% - 158px); height: 100%;
+        width: 90%; height: 100%;
     }
+
     #artione .inner p:first-of-type{height: 50%; font-size: 15px; padding: 40px 0 0 50px;
         font-family: 'Noto Serif KR', serif; font-family: 'IBM Plex Sans KR', sans-serif; 
         font-weight: 500; color: #999; position: relative;
@@ -49,8 +49,8 @@
         font-family: 'Noto Serif KR', serif; font-family: 'IBM Plex Sans KR', sans-serif;
         font-weight: 600;position: relative; z-index: 3; 
     }
-    #artione .out{width: 158px; height: 100%; padding: 150px 0 0 30px; font-weight: lighter;}
-    #artione .out img{width: 70px; position: absolute; z-index: 3;}
+    #artione .out{width: 10%; height: 100%; padding: 150px 0 0 30px; font-weight: lighter;}
+    #artione .out img{width: 70px; position: relative; z-index: 3;}
 
     #articlewrap #artitwo{ width: 100%; height: calc(100% - 230px); border-style: none solid solid none; 
         border-width: 1px; border-color: #999; display: flex;
@@ -63,7 +63,7 @@
     #artitwo .pbox p{font-family: 'Noto Serif KR', serif;  
         line-height: 30px;
     }
-
+    
     #sewrapone #asione{ width: 320px; height: auto; border-bottom: 1px solid #999;
         padding: 295px 0 0 70px;
     }
@@ -83,19 +83,20 @@
 
 
     #sewraptwo{width: 100%; height: 460px; display: flex;}
+
     #sewraptwo #asitwo{border-bottom: 1px solid #999; width: 40%; 
         display: flex;
     }
     #asitwo .asitwop{width: 80%; display: flex; flex-wrap: wrap;}
     #asitwo .asitwop p:first-of-type{width: 100%; height: 60%; font-size: 15px; 
-        padding: 50px 0 0 50px;
+        padding: 50px 0 0 40px;
         font-family: 'Noto Serif KR', serif; font-family: 'IBM Plex Sans KR', sans-serif;
         font-weight: 200; color: #999;}
     #asitwo .asitwop p:last-of-type{width: 100%; height: 40%; font-size: 45px;
         font-family: 'Noto Serif KR', serif; font-family: 'IBM Plex Sans KR', sans-serif;
-        font-weight: 600; padding: 70px 0 0 50px;
+        font-weight: 600; padding: 70px 0 0 40px;
     }
-    #asitwo .asitwoimg{width: 20%; padding: 60px 0 0 70px;}
+    #asitwo .asitwoimg{width: 20%; padding: 60px 0 0 50px;}
     #asitwo .asitwoimg img{ width: 45px; height: auto;
     }
 
@@ -113,7 +114,7 @@
         font-family: 'Noto Serif KR', serif; font-family: 'IBM Plex Sans KR', sans-serif;
         font-weight: 600; padding: 10px 0 0 50px;
     }
-
+    
     #articlewraptwo #artifour{
         width: 100%; height: 50%; border-style: none none solid solid; border-width: 1px; 
         border-color: #999;
@@ -135,12 +136,12 @@
         overflow:hidden;}
     #slidewrap .slide {width: 150%; display: flex; }
     #slidewrap .slide li {width: 25%; height: auto; text-align: center; }
-    #slidewrap .slide li img {width: 80%; min-width: 320px; height: auto; padding: 30px;}
+    #slidewrap .slide li img {width: 100%; height: 100%; padding: 30px;}
     #slidewrap span {position: absolute; top:55%; display: block; font-size: 38px; color:#444; 
         line-height: 40px; cursor: pointer; height: 50px; 
         transform: translateY(-50%); }
     #slidewrap span:hover {opacity: 0.7;}
-    
-    #slidewrap .prev {left:0; padding: 0 8px 0 2px;}
-    #slidewrap .next {right:0;  padding: 0 2px 0 8px;}
+
+    #slidewrap .prev {left:0; border-radius: 0 10px 10px 0px; padding: 0 8px 0 2px;}
+    #slidewrap .next {right:0; border-radius: 10px 0px 0px 10px; padding: 0 2px 0 8px;}
 }
