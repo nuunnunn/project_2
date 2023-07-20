@@ -6,10 +6,11 @@
     <title>TAMBURINS</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/main_largesize.css">
-    <link rel="stylesheet" href="css/main_mediumsize.css">
-    <link rel="stylesheet" href="css/main_mediumsmallsize.css">
-    <link rel="stylesheet" href="css/main_smallsize.css">
+    <link rel="stylesheet" href="css/main_large.css">
+    <link rel="stylesheet" href="css/main_medium.css">
+    <link rel="stylesheet" href="css/main_mediumsmall.css">
+    <link rel="stylesheet" href="css/main_small.css">
+    <link rel="stylesheet" href="css/main_xsmall.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,6 +41,16 @@
                     $('#menu img').hide();
                 }
             });
+
+
+
+            $('.menu_trigger').on('click', function(e){
+                    e.preventDefault();
+                    $(this).toggleClass('active');
+                    $('#mynav').toggleClass('right');
+                    $('.menu_trigger span').toggleClass('spanch');
+            })
+
 
 
             if (window.matchMedia("(min-width: 1300px)").matches) {
@@ -86,23 +97,95 @@
                     });
                 });
             }
-
-
-            
             
 
-            $('.menu_trigger').on('click', function(e){
-                    e.preventDefault();
-                    $(this).toggleClass('active');
-                    $('#mynav').toggleClass('right');
-                    $('.menu_trigger span').toggleClass('spanch');
-            })
 
             $('#artione').hover(function(){
                 $('.arrow').attr('src','img/main/arrowwhite.png');
             }, function(){
                 $('.arrow').attr('src','img/main/arrow.png');
             });
+
+
+
+            if (window.matchMedia("(min-width:1500px)").matches) {
+                $('#artithr').hover(function () {
+                    $(this).children('.line').stop().animate({ width: '27.5%' }, 1000);
+                }, function () {
+                    $(this).children('.line').stop().stop().animate({ width: '0%' }, 1000);
+                });
+
+                $('#artifour').hover(function () {
+                    $(this).children('.line').stop().animate({ width: '17%' }, 1000);
+                }, function () {
+                    $(this).children('.line').stop().stop().animate({ width: '0%' }, 1000);
+                });
+
+            } else if(window.matchMedia("(min-width:1300px) and (max-width:1499px)").matches) {
+                $('#artithr').hover(function () {
+                    $(this).children('.line').stop().animate({ width: '38%' }, 1000);
+                }, function () {
+                    $(this).children('.line').stop().stop().animate({ width: '0%' }, 1000);
+                });
+
+                $('#artifour').hover(function () {
+                    $(this).children('.line').stop().animate({ width: '24%' }, 1000);
+                }, function () {
+                    $(this).children('.line').stop().stop().animate({ width: '0%' }, 1000);
+                });
+
+            }else if(window.matchMedia("(min-width:980px) and (max-width:1299px)").matches) {
+                $('#artithr').hover(function () {
+                    $(this).children('.line').stop().animate({ width: '57%' }, 1000);
+                }, function () {
+                    $(this).children('.line').stop().stop().animate({ width: '0%' }, 1000);
+                });
+
+                $('#artifour').hover(function () {
+                    $(this).children('.line').stop().animate({ width: '36%' }, 1000);
+                }, function () {
+                    $(this).children('.line').stop().stop().animate({ width: '0%' }, 1000);
+                });
+
+            }else if(window.matchMedia("(min-width:768px) and (max-width:979px)").matches) {
+                $('#artithr').hover(function () {
+                    $(this).children('.line').stop().animate({ width: '76%' }, 1000);
+                }, function () {
+                    $(this).children('.line').stop().stop().animate({ width: '0%' }, 1000);
+                });
+
+                $('#artifour').hover(function () {
+                    $(this).children('.line').stop().animate({ width: '48%' }, 1000);
+                }, function () {
+                    $(this).children('.line').stop().stop().animate({ width: '0%' }, 1000);
+                });
+
+            }else if(window.matchMedia("(min-width:501px) and (max-width:767px)").matches) {
+                $('#artithr').hover(function () {
+                    $(this).children('.line').stop().animate({ width: '33%' }, 1000);
+                }, function () {
+                    $(this).children('.line').stop().stop().animate({ width: '0%' }, 1000);
+                });
+
+                $('#artifour').hover(function () {
+                    $(this).children('.line').stop().animate({ width: '21%' }, 1000);
+                }, function () {
+                    $(this).children('.line').stop().stop().animate({ width: '0%' }, 1000);
+                });
+
+            }else{
+                $('#artithr').hover(function () {
+                    $(this).children('.line').stop().animate({ width: '51%' }, 1000);
+                }, function () {
+                    $(this).children('.line').stop().stop().animate({ width: '0%' }, 1000);
+                });
+
+                $('#artifour').hover(function () {
+                    $(this).children('.line').stop().animate({ width: '32%' }, 1000);
+                }, function () {
+                    $(this).children('.line').stop().stop().animate({ width: '0%' }, 1000);
+                });
+            }
 
         });
 
@@ -201,26 +284,34 @@
 
             <article id="sewraptwo">
                 
-                    <div id="asitwo">
-                        <div class="asitwop">
-                            <p>product story</p>
-                            <p><a href="#">SHOPPING STORY</a></p>
+                    <a href="#" class="twoOfOne">
+                        <div id="asitwo">
+                            <div class="asitwop">
+                                <p>product story</p>
+                                <p>SHOPPING STORY</p>
+                            </div>
+                            <div class="asitwoimg">
+                                <img src="img/main/tamburins_logo_coltwo.png" alt="verticallogo">
+                            </div>
                         </div>
-                        <div class="asitwoimg">
-                            <img src="img/main/tamburins_logo_coltwo.png" alt="verticallogo">
-                        </div>
-                    </div>
+                    </a>
                 
                 <div id="articlewraptwo">
-                    <div id="artithr">
-                        <p>about TAMBURINS</p>
-                        <p><a href="#">NOTICE / Q & A</a></p>
-                    </div>
+                    <a href="#">
+                        <div id="artithr">
+                            <p>about TAMBURINS</p>
+                            <p>NOTICE / Q & A</p>
+                            <div class="line"></div>
+                        </div>
+                    </a>
 
-                    <div id="artifour">
-                        <p>contact us</p>
-                        <p><a href="#">CONTACT</a></p>
-                    </div>
+                    <a href="#">
+                        <div id="artifour">
+                            <p>contact us</p>
+                            <p>CONTACT</p>
+                            <div class="line"></div>
+                        </div>
+                    </a>
                 </div>
 
             </article>
@@ -253,10 +344,10 @@
         <footer>
             <h1>Visual and tactile pleasure</h1><br>
             <h4>TAMBURINS CEO<span>김한국</span></h4><br>
-            <span><b>Email</b>&nbsp;&nbsp;&nbsp;cs@tamburins.com&nbsp;&nbsp;&nbsp;&nbsp;<strong>|</strong></span>
-            <span>&nbsp;&nbsp;&nbsp;&nbsp;<b>C/S</b>&nbsp;&nbsp;&nbsp;1644-1246&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
-            <span><b>Mall Order License</b>&nbsp;&nbsp;&nbsp;제 2014-서울마포-1050 호 &#91;사업자정보확인&#93;&nbsp;&nbsp;&nbsp;&nbsp;<strong>|</strong></span>
-            <span>&nbsp;&nbsp;&nbsp;&nbsp;<b>Business License</b> &nbsp;&nbsp;&nbsp;-86-38589&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+            <span><b>Email</b>&nbsp;&nbsp;&nbsp;cs@tamburins.com<strong>&nbsp;&nbsp;&nbsp;&nbsp;|</strong></span>
+            <span><b>C/S</b>&nbsp;&nbsp;&nbsp;1644-1246&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+            <span><b>Mall Order License</b>&nbsp;&nbsp;&nbsp;제 2014-서울마포-1050 호 &#91;사업자정보확인&#93;<strong>&nbsp;&nbsp;&nbsp;&nbsp;|</strong></span>
+            <span><b>Business License</b> &nbsp;&nbsp;&nbsp;-86-38589&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
             <span><b>Adress</b>&nbsp;&nbsp;&nbsp;서울특별시 마포구 어울마당로5길 41(41, Eoulmadang-ro 5-gil, Mapo-gu, Seoul, Republic of Korea)</span><br><br>
             <p>© TAMBURINS KR</p>
         </footer>
