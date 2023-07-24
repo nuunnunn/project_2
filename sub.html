@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAMBURINS</title>
+    <link rel="stylesheet" href="css/reset.css">    
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Acme&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Bree+Serif&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=IBM+Plex+Sans+KR:wght@300&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Merriweather:wght@700&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Noto+Serif+KR&family=Oswald&family=Pangolin&family=Rowdies&family=Special+Elite&family=Yatra+One&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grandiflora+One&family=Hahmlet:wght@100&family=IBM+Plex+Sans+KR:wght@300&family=Nanum+Gothic:wght@700&family=Noto+Sans+KR:wght@500&family=Noto+Serif+KR:wght@200;900&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $(window).scroll(function () {
+                // var currentScrollTop = $(this).scrollTop();
+                // //스크롤 하면 메뉴 보임
+                // if (currentScrollTop > 100) {
+                //     $('#menu').addClass('fixed');
+                //     $('#menu li i').addClass('txtch');
+                //     $('.menu_trigger span').addClass('spanch');    
+                // }
+                //  else {
+                //     $('#menu').removeClass('fixed');
+                //     $('#menu li i').removeClass('txtch');
+                //     $('.menu_trigger span').removeClass('spanch');
+                // }
+            });
+            
+            //메뉴 바 누르면 사이드 메뉴 보임
+            // const main = location.href.split('/').reverse()[0];
+            // if(main === 'index.html'){}
+            $('.menu_trigger').on('click', function(e){
+                    e.preventDefault();
+                    $(this).toggleClass('active');
+                    $('#mynav').toggleClass('right');
+                    $('.menu_trigger span').toggleClass('spanch');
+            })
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+
+        <header>
+            <nav id="menu">
+                <a href="index.html"><img src="img/main/tamburins_logo_display_transparent.png" alt="logo"></a>
+                <ul>
+                    <li class="show"><a href="#"><img src="img/main/logintwo.png" alt="login" class="login"></a></li>
+                    <li class="show"><a href="#"><img src="img/main/cartthr.png" alt="cart" class="cart"></a></li>
+                    <li>
+                        <a href="#" class="menu_trigger">
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div id="mynav" class="overlay">
+
+                    <div class="overlay-content">
+                        <a href="index.html">HOME</a>
+                        <a href="sub.html">SHOP</a>
+                        <a href="sub.html">SHOPPING STORY</a>
+                        <a href="sub.html">NOTICE / Q & A</a>
+                        <a href="sub.html">CONTACT</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+
+        <div id="content">
+            
+        </div>
+        
+        
+        
+        <footer>
+            <h1>Visual and tactile pleasure</h1><br>
+            <h4>TAMBURINS CEO<span>김한국</span></h4><br>
+            <span><b>Email</b>&nbsp;&nbsp;&nbsp;cs@tamburins.com<strong>&nbsp;&nbsp;&nbsp;&nbsp;|</strong></span>
+            <span><b>C/S</b>&nbsp;&nbsp;&nbsp;1644-1246&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+            <span><b>Mall Order License</b>&nbsp;&nbsp;&nbsp;제 2014-서울마포-1050 호 &#91;사업자정보확인&#93;<strong>&nbsp;&nbsp;&nbsp;&nbsp;|</strong></span>
+            <span><b>Business License</b> &nbsp;&nbsp;&nbsp;-86-38589&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+            <span><b>Adress</b>&nbsp;&nbsp;&nbsp;서울특별시 마포구 어울마당로5길 41(41, Eoulmadang-ro 5-gil, Mapo-gu, Seoul, Republic of Korea)</span><br><br>
+            <p>© TAMBURINS KR</p>
+        </footer>
+
+    </div>
+</body>
+</html>
