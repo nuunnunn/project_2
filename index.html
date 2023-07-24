@@ -43,103 +43,54 @@
                 }
 
                 //스크롤 하면 텍스트 보임
-                //스크롤 반응형
-                if (window.matchMedia("(min-width:1300px)").matches){
-                    var banner = $('#banner').offset().top;
-                    //첫섹션 나타남, 배너 사라짐
-                    if(0 < currentScrollTop < banner-700){
-                        $('.inner p').css("transform","translateX(0px)").css("opacity","1");
-                        $('.out img').css("transform","translateX(0px)").css("opacity","1");
-                        $('.pbox p').css("transform","translateY(0px)").css("opacity","1");
+                var banner = $('#banner').offset().top;
+                //첫섹션 나타남, 배너 사라짐
+                if(0 < currentScrollTop < banner-700){
+                    $('.inner p').css("transform","translateX(0px)").css("opacity","1");
+                    $('.out img').css("transform","translateX(0px)").css("opacity","1");
+                    $('.pbox p').css("transform","translateY(0px)").css("opacity","1");
 
-                        $('#banner p').css('transform', 'translateY(100px)').css('opacity','0')
-                    }
-                    //첫섹션 사라짐
-                    if(currentScrollTop > banner){
-                        $('.inner p').css("transform","translateX(-100px)").css("opacity","0");
-                        $('.out img').css("transform","translateX(50px)").css("opacity","0");
-                        $('.pbox p').css("transform","translateY(100px)").css("opacity","0");
-                    }
-                    //배너 나타남, 첫섹션과 두번째 섹션 사라짐
-                    if (currentScrollTop > banner-700) {
-                        $('.inner p').css("transform","translateX(-100px)").css("opacity","0");
-                        $('.out img').css("transform","translateX(50px)").css("opacity","0");
-                        $('.pbox p').css("transform","translateY(100px)").css("opacity","0");
+                    $('#banner p').css('transform', 'translateY(100px)').css('opacity','0')
+                }
+                //첫섹션 사라짐
+                if(currentScrollTop > banner-400){
+                    $('.inner p').css("transform","translateX(-100px)").css("opacity","0");
+                    $('.out img').css("transform","translateX(50px)").css("opacity","0");
+                    $('.pbox p').css("transform","translateY(100px)").css("opacity","0");
+                }
+                //배너 나타남, 첫섹션과 두번째 섹션 사라짐
+                if (currentScrollTop > banner-700) {
+                    $('.inner p').css("transform","translateX(-100px)").css("opacity","0");
+                    $('.out img').css("transform","translateX(50px)").css("opacity","0");
 
-                        $('#banner p').css('transform', 'translateY(0px)').css('opacity','1')
+                    $('#banner p').css('transform', 'translateY(0px)').css('opacity','1')
 
-                        $('.asitwop p').css('transform', 'translateX(-100px)').css('opacity','0');
-                        $('.asitwoimg img').css('transform', 'translateY(100px)').css('opacity','0');
-                        $('#artithr p').css('transform', 'translateX(300px)').css('opacity','0');
-                        $('#artifour p').css('transform', 'translateX(300px)').css('opacity','0');
-                    } 
+                    $('.asitwop p').css('transform', 'translateX(-100px)').css('opacity','0');
+                    $('.asitwoimg img').css('transform', 'translateY(100px)').css('opacity','0');
+                    $('#artithr p').css('transform', 'translateX(300px)').css('opacity','0');
+                    $('#artifour p').css('transform', 'translateX(300px)').css('opacity','0');
+                } 
 
-                    var sectiontwo = $('#sewraptwo').offset().top;
-                    //배너 사라짐
-                    if(currentScrollTop > sectiontwo-400){
-                        $('#banner p').css('transform', 'translateY(100px)').css('opacity','0')
-                    }
-                    //두번째 섹션 나타남
-                    if (currentScrollTop > sectiontwo-700) {
-                        $('.asitwop p').css('transform', 'translateX(0px)').css('opacity','1');
-                        $('.asitwoimg img').css('transform', 'translateY(0px)').css('opacity','1');
-                        $('#artithr p').css('transform', 'translateX(0px)').css('opacity','1');
-                        $('#artifour p').css('transform', 'translateX(0px)').css('opacity','1');
-                    } 
-                    //스크롤 반응형
-                } else if (window.matchMedia("(max-width:1299px)").matches){
-                    var pbox = $('.pbox').offset().top;
-                    //첫섹션 나타남, pbox 배너 사라짐
-                    if(0 < currentScrollTop < pbox-800){
-                        $('.inner p').css("transform","translateX(0px)").css("opacity","1");
-                        $('.out img').css("transform","translateX(0px)").css("opacity","1");
-                        
-                        $('#banner p').css('transform', 'translateY(100px)').css('opacity','0')
-                    }
-                   
-                    //pbox 나타남
-                    if (currentScrollTop > pbox-300){
-                        $('.pbox p').css("transform","translateY(0px)").css("opacity","1");
-                    }
-
-                    //첫섹션 사라짐
-                    if(currentScrollTop > banner){
-                        $('.inner p').css("transform","translateX(-100px)").css("opacity","0");
-                        $('.out img').css("transform","translateX(50px)").css("opacity","0");
-                    }
-                    
-                    var banner = $('#banner').offset().top;
-                    //배너 나타남, 첫섹션과 두번째 섹션 사라짐
-                    if (currentScrollTop > banner-400) {
-                        $('.inner p').css("transform","translateX(-100px)").css("opacity","0");
-                        $('.out img').css("transform","translateX(50px)").css("opacity","0");
-
-                        $('#banner p').css('transform', 'translateY(0px)').css('opacity','1')
-
-                        $('.asitwop p').css('transform', 'translateX(-100px)').css('opacity','0');
-                        $('.asitwoimg img').css('transform', 'translateY(100px)').css('opacity','0');
-                        $('#artithr p').css('transform', 'translateX(300px)').css('opacity','0');
-                        $('#artifour p').css('transform', 'translateX(300px)').css('opacity','0');
-                    } 
-
-                    var sectiontwo = $('#sewraptwo').offset().top;
-                    //두번째 섹션 나타남, pbox 사라짐
-                    if (currentScrollTop > sectiontwo-700) {
-                        $('.asitwop p').css('transform', 'translateX(0px)').css('opacity','1');
-                        $('.asitwoimg img').css('transform', 'translateY(0px)').css('opacity','1');
-                        $('#artithr p').css('transform', 'translateX(0px)').css('opacity','1');
-                        $('#artifour p').css('transform', 'translateX(0px)').css('opacity','1');
-                        
-                        $('.pbox p').css("transform","translateY(100px)").css("opacity","0");
-                    }
-
-                    var footer = $('footer').offset().top;
-                    //배너 사라짐
-                    if (currentScrollTop > footer){
-                        $('#banner p').css('transform', 'translateY(100px)').css('opacity','0')
-                    }
+                 var sectiontwo = $('#sewraptwo').offset().top;
+                //두번째 섹션 나타남
+                if (currentScrollTop > sectiontwo-700) {
+                    $('.asitwop p').css('transform', 'translateX(0px)').css('opacity','1');
+                    $('.asitwoimg img').css('transform', 'translateY(0px)').css('opacity','1');
+                    $('#artithr p').css('transform', 'translateX(0px)').css('opacity','1');
+                    $('#artifour p').css('transform', 'translateX(0px)').css('opacity','1');
+                } 
+                //배너 사라짐
+                if(currentScrollTop > sectiontwo-300){
+                    $('#banner p').css('transform', 'translateY(100px)').css('opacity','0')
                 }
 
+                var footer = $('#bannertwo').offset().top;
+                if (currentScrollTop > footer-250) {
+                    $('.asitwop p').css('transform', 'translateX(-100px)').css('opacity','0');
+                    $('.asitwoimg img').css('transform', 'translateY(100px)').css('opacity','0');
+                    $('#artithr p').css('transform', 'translateX(300px)').css('opacity','0');
+                    $('#artifour p').css('transform', 'translateX(300px)').css('opacity','0');
+                } 
             });
 
             //첫 방문 시 보임
