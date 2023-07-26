@@ -111,7 +111,7 @@
 
 
             //슬라이드 이미지 반응형
-            if (window.matchMedia("(min-width: 1300px)").matches) {
+            if (window.matchMedia("(min-width: 1500px)").matches) {
 
                 $('.prev').click(function () {
                     $('.slide li:last').prependTo('.slide');
@@ -126,16 +126,31 @@
                     });
                 });
 
-            } else if(window.matchMedia("(min-width:980px) and (max-width:1299px)").matches) {
+            }else if (window.matchMedia("(min-width:1300px) and (max-width:1499px)").matches) {
 
                 $('.prev').click(function () {
                     $('.slide li:last').prependTo('.slide');
-                    $('.slide').css('margin-left', '-33.33%');
+                    $('.slide').css('margin-left', '-24%');
                     $('.slide').stop().animate({ marginLeft: 0 }, 800);
                 });
 
                 $('.next').click(function () {
-                    $('.slide').stop().animate({ marginLeft: '-33.33%' }, 800, function () {
+                    $('.slide').stop().animate({ marginLeft: '-24%' }, 800, function () {
+                        $('.slide li:first').appendTo('.slide');
+                        $('.slide').css({ marginLeft: 0 });
+                    });
+                });
+
+            } else if(window.matchMedia("(min-width:980px) and (max-width:1299px)").matches) {
+
+                $('.prev').click(function () {
+                    $('.slide li:last').prependTo('.slide');
+                    $('.slide').css('margin-left', '-32%');
+                    $('.slide').stop().animate({ marginLeft: 0 }, 800);
+                });
+
+                $('.next').click(function () {
+                    $('.slide').stop().animate({ marginLeft: '-32%' }, 800, function () {
                         $('.slide li:first').appendTo('.slide');
                         $('.slide').css({ marginLeft: 0 });
                     });
@@ -300,7 +315,7 @@
                     <a href="sub.html">
                         <div id="artione">
                             <div class="inner">
-                                <p>all product</p>
+                                <p>store & exhibit</p>
                                 <p>SHOP</p>
                             </div>
                             <p class="out">
@@ -311,7 +326,7 @@
                     
 
                     <div id="artitwo">
-                        <div class="imgbox"><img src="img/main/creamon_.png" alt="cream"></div>
+                        <div class="imgbox"><img src="img/main/tamb_.png" alt="cream"></div>
                         <div class="pbox">
                             <p>
                                 세상에 흩어진 모든 이야기에서 영감을 받은 감각적인 향이 <br>
@@ -377,19 +392,43 @@
             <div id="bannertwo">
                 <div id="slidewrap">
                     <ul class="slide">
-                      <li><img src="img/main/limitedcandlefour.png" alt="limitedcandlefour"></li>
-              
-                      <li><img src="img/main/limitedcandlethr.png" alt="limitedcandlethr"></li>
-                      
-                      <li><img src="img/main/tooltwo.png"  alt="tooltwo"></li>
-                      
-                      <li><img src="img/main/tool.png" alt="tool"></li>
-              
-                      <li><img src="img/main/picthr.png" alt="picthr"></li>
-                      
-                      <li><img src="img/main/objectcandle.png"  alt="objectcandle"></li>
-              
-              
+                        <li><img src="img/main/shelltwo.png" alt="shell"></li>
+
+                        <li><img src="img/main/nudehandcream.png" alt="poster"></li>
+
+                        <li><img src="img/main/tam.png"  alt="room"></li>
+                        
+                        <li><img src="img/main/pic.png"  alt="black"></li>
+
+                        <li><img src="img/main/glassdiffuser.png" alt="glassdiffuser"></li>
+
+                        <li><img src="img/main/glassdiffuserfive.png" alt="glassdiffuserfive"></li>
+
+                        <li><img src="img/main/glassdiffuserfour.png"  alt="glassdiffuserfour"></li>
+                        
+                        <li><img src="img/main/glassdiffusersix.png"  alt="glassdiffusersix"></li>
+
+                        <li><img src="img/main/glassdiffuserthr.png" alt="glassdiffuserthr"></li>
+                
+                        <li><img src="img/main/glassdiffusertwo.png" alt="glassdiffusertwo"></li>
+
+                        <li><img src="img/main/912.png" alt="red"></li>
+                
+                        <li><img src="img/main/picthr.png" alt="picthr"></li>
+
+                        <li><img src="img/main/pvc.png" alt="pvc"></li>
+
+                        <li><img src="img/main/creamon.png" alt="cream"></li>
+
+                        <li><img src="img/main/284.png" alt="orange"></li>
+
+                        <li><img src="img/main/window.png" alt="window"></li>
+
+                        <li><img src="img/main/flowertwo.png" alt="flowertwo"></li>
+
+                        <li><img src="img/main/nudehandcreamtwo.png" alt="nudehandcream"></li>
+
+                        <li><img src="img/main/flowerthr.png" alt="flowerthr"></li>
                     </ul>
               
                     <span class="prev">&lt;</span>

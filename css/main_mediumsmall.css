@@ -174,7 +174,7 @@
     }
     #slidewrap {width: 90%; height: 350px; margin: 6% auto; position: relative; 
         overflow:hidden;}
-    #slidewrap .slide {width: 300%; display: flex; }
+    #slidewrap .slide {width: 950%; display: flex; }
     #slidewrap .slide li {width: 25%; height: auto; text-align: center; }
     #slidewrap .slide li img {width: 100%; height: auto; padding: 30px;}
     #slidewrap span {position: absolute; top:55%; display: block; font-size: 38px; color:#444; 
