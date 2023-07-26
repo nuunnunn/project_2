@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TAMBURINS</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reset.css">    
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/sub.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
@@ -15,165 +14,38 @@
         href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Acme&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Bree+Serif&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=IBM+Plex+Sans+KR:wght@300&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Merriweather:wght@700&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Noto+Serif+KR&family=Oswald&family=Pangolin&family=Rowdies&family=Special+Elite&family=Yatra+One&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@900&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Grandiflora+One&family=Hahmlet:wght@100&family=IBM+Plex+Sans+KR:wght@300&family=Nanum+Gothic:wght@700&family=Noto+Sans+KR:wght@500&family=Noto+Serif+KR:wght@200;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grandiflora+One&family=Hahmlet:wght@100&family=IBM+Plex+Sans+KR:wght@300&family=Nanum+Gothic:wght@700&family=Noto+Sans+KR:wght@500&family=Noto+Serif+KR:wght@200;900&display=swap" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script>
-        $(function () {
-
+        $(function(){
+            $(window).scroll(function () {
+                // var currentScrollTop = $(this).scrollTop();
+                // //스크롤 하면 메뉴 보임
+                // if (currentScrollTop > 100) {
+                //     $('#menu').addClass('fixed');
+                //     $('#menu li i').addClass('txtch');
+                //     $('.menu_trigger span').addClass('spanch');    
+                // }
+                //  else {
+                //     $('#menu').removeClass('fixed');
+                //     $('#menu li i').removeClass('txtch');
+                //     $('.menu_trigger span').removeClass('spanch');
+                // }
+            });
+            
             //메뉴 바 누르면 사이드 메뉴 보임
-            $('.menu_trigger').on('click', function (e) {
-                e.preventDefault();
-                $(this).toggleClass('active');
-                $('#mynav').toggleClass('right');
-                $('.menu_trigger span').toggleClass('spanch');
-            });
-
-
-            //slide img
-            // if (window.matchMedia("(min-width: 1500px)").matches) {
-
-            $('#slwrap .prev').click(function () {
-                $('.slideimg li:last').prependTo('.slideimg');
-                $('.slideimg').css('margin-left', '-53%');
-                $('.slideimg').stop().animate({ marginLeft: 0 }, 800);
-            });
-
-            $('#slwrap .next').click(function () {
-                $('.slideimg').stop().animate({ marginLeft: '-53%' }, 800, function () {
-                    $('.slideimg li:first').appendTo('.slideimg');
-                    $('.slideimg').css({ marginLeft: 0 });
-                });
-            });
-
-            // }
-
-            //slide img2
-            // if (window.matchMedia("(min-width: 1500px)").matches) {
-
-            $('#slwrap2 .prev').click(function () {
-                $('.slideimg2 li:last').prependTo('.slideimg2');
-                $('.slideimg2').css('margin-left', '-52.5%');
-                $('.slideimg2').stop().animate({ marginLeft: 0 }, 800);
-            });
-
-            $('#slwrap2 .next').click(function () {
-                $('.slideimg2').stop().animate({ marginLeft: '-52.5%' }, 800, function () {
-                    $('.slideimg2 li:first').appendTo('.slideimg2');
-                    $('.slideimg2').css({ marginLeft: 0 });
-                });
-            });
-
-            // }
-
-            //slide img3
-            // if (window.matchMedia("(min-width: 1500px)").matches) {
-
-            $('#slwrap3 .prev').click(function () {
-                $('.slideimg3 li:last').prependTo('.slideimg3');
-                $('.slideimg3').css('margin-left', '-52.5%');
-                $('.slideimg3').stop().animate({ marginLeft: 0 }, 800);
-            });
-
-            $('#slwrap3 .next').click(function () {
-                $('.slideimg3').stop().animate({ marginLeft: '-52.5%' }, 800, function () {
-                    $('.slideimg3 li:first').appendTo('.slideimg3');
-                    $('.slideimg3').css({ marginLeft: 0 });
-                });
-            });
-
-            // }
-
-            //slide img4
-            // if (window.matchMedia("(min-width: 1500px)").matches) {
-
-            $('#slwrap4 .prev').click(function () {
-                $('.slideimg4 li:last').prependTo('.slideimg4');
-                $('.slideimg4').css('margin-left', '-35%');
-                $('.slideimg4').stop().animate({ marginLeft: 0 }, 800);
-            });
-
-            $('#slwrap4 .next').click(function () {
-                $('.slideimg4').stop().animate({ marginLeft: '-35%' }, 800, function () {
-                    $('.slideimg4 li:first').appendTo('.slideimg4');
-                    $('.slideimg4').css({ marginLeft: 0 });
-                });
-            });
-
-            // }
-
-            //slide img5
-            // if (window.matchMedia("(min-width: 1500px)").matches) {
-
-            $('#slwrap5 .prev').click(function () {
-                $('.slideimg5 li:last').prependTo('.slideimg5');
-                $('.slideimg5').css('margin-left', '-52.5%');
-                $('.slideimg5').stop().animate({ marginLeft: 0 }, 800);
-            });
-
-            $('#slwrap5 .next').click(function () {
-                $('.slideimg5').stop().animate({ marginLeft: '-52.5%' }, 800, function () {
-                    $('.slideimg5 li:first').appendTo('.slideimg5');
-                    $('.slideimg5').css({ marginLeft: 0 });
-                });
-            });
-
-            // }
-
-            //slide img6
-            // if (window.matchMedia("(min-width: 1500px)").matches) {
-
-            $('#slwrap6 .prev').click(function () {
-                $('.slideimg6 li:last').prependTo('.slideimg6');
-                $('.slideimg6').css('margin-left', '-52.5%');
-                $('.slideimg6').stop().animate({ marginLeft: 0 }, 800);
-            });
-
-            $('#slwrap6 .next').click(function () {
-                $('.slideimg6').stop().animate({ marginLeft: '-52.5%' }, 800, function () {
-                    $('.slideimg6 li:first').appendTo('.slideimg6');
-                    $('.slideimg6').css({ marginLeft: 0 });
-                });
-            });
-
-            // }
-
-            //slide img7
-            // if (window.matchMedia("(min-width: 1500px)").matches) {
-
-            $('#slwrap7 .prev').click(function () {
-                $('.slideimg7 li:last').prependTo('.slideimg7');
-                $('.slideimg7').css('margin-left', '-52.5%');
-                $('.slideimg7').stop().animate({ marginLeft: 0 }, 800);
-            });
-
-            $('#slwrap7 .next').click(function () {
-                $('.slideimg7').stop().animate({ marginLeft: '-52.5%' }, 800, function () {
-                    $('.slideimg7 li:first').appendTo('.slideimg7');
-                    $('.slideimg7').css({ marginLeft: 0 });
-                });
-            });
-
-            // }
-
-
-            $('#butn').click(function () {
-                $('#innerwrap').fadeIn('slow');
-                $('#innerwrap2').hide();
-            });
-
-            $('#butn2').click(function () {
-                $('#innerwrap2').fadeIn('slow');
-                $('#innerwrap').hide();
-            });
-
-
+            // const main = location.href.split('/').reverse()[0];
+            // if(main === 'index.html'){}
+            $('.menu_trigger').on('click', function(e){
+                    e.preventDefault();
+                    $(this).toggleClass('active');
+                    $('#mynav').toggleClass('right');
+                    $('.menu_trigger span').toggleClass('spanch');
+            })
         });
     </script>
 </head>
-
 <body>
     <div id="wrap">
 
@@ -207,284 +79,22 @@
 
 
         <div id="content">
-            <div id="btnwrap">
-                <div id="butn">
-                    <button><img src="img/sub/button.png" alt="store"></button>
-                    <label for="store">STORE</label>
-                </div>
-                <div id="butn2">
-                    <button><img src="img/sub/objet.png" alt="exhibit"></button>
-                    <label for="exhibit">EXHIBIT</label>
-                </div>
-            </div>
-
-
-
-            <div id="innerwrap">
-                <div id="inner">
-                    <div id="text">
-                        <h3>플래그십스토어 신사</h3>
-                        <p>서울 강남구 압구정로10길 44 <br>
-                            +82 02 511 1246 <br>
-                            월-일 12:00pm-9:00pm
-                        </p>
-                    </div>
-
-                    <div id="slwrap">
-                        <ul class="slideimg">
-                            <li><img src="img/sub/sinsaThr.png" alt="sinsa"></li>
-                            <li><img src="img/sub/sinsaSix.png" alt="sinsa"></li>
-                            <li><img src="img/sub/sinsa.png" alt="sinsa"></li>
-                            <li><img src="img/sub/sinsaTwo.png" alt="sinsa"></li>
-                            <li><img src="img/sub/sinsaFive.png" alt="sinsa"></li>
-                            <li><img src="img/sub/sinsafour.png" alt="sinsa"></li>
-                            <li><img src="img/sub/sinsaSev.png" alt="sinsa"></li>
-                        </ul>
-
-                        <span class="prev">&lt;</span>
-                        <span class="next">&gt;</span>
-                    </div>
-
-                </div>
-
-
-                <div id="inner2">
-                    <div id="text">
-                        <h3>하우스 도산</h3>
-                        <p>서울 강남구 압구정로46길 50 <br>
-                            +82 70 4128 2124 <br>
-                            월-일 11:00am-9:00pm
-                        </p>
-                    </div>
-
-                    <div id="slwrap2">
-                        <ul class="slideimg2">
-                            <li><img src="img/sub/housedosanThr.png" alt="housedosan"></li>
-                            <li><img src="img/sub/housedosanTwo.png" alt="housedosan"></li>
-                            <li><img src="img/sub/housedosan.png" alt="housedosan"></li>
-                        </ul>
-
-                        <span class="prev">&lt;</span>
-                        <span class="next">&gt;</span>
-                    </div>
-
-                </div>
-
-
-                <div id="inner3">
-                    <div id="text">
-                        <h3>플래그십스토어 삼청</h3>
-                        <p>서울 종로구 율곡로3길 84 <br>
-                            +82 70 4139 7450 <br>
-                            월-일 11:00am-8:00pm
-                        </p>
-                    </div>
-
-                    <div id="slwrap3">
-                        <ul class="slideimg3">
-                            <li><img src="img/sub/storesamchung.png" alt="storesamchung"></li>
-                            <li><img src="img/sub/storesamchungTwo.png" alt="storesamchung"></li>
-                            <li><img src="img/sub/storesamchungThr.png" alt="storesamchung"></li>
-                        </ul>
-
-                        <span class="prev">&lt;</span>
-                        <span class="next">&gt;</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div id="innerwrap2">
-                <div id="inner4">
-                    <div id="text">
-                        <h3>하베스트 퍼퓸 비누 컬렉션</h3>
-                        <p>논 밭을 일구어 수확한 퍼퓸 비누 4종을 소개합니다.<br> HARVEST에서 영감을 받은 전시 공간은
-                            화사한 햇볕이 드는 논밭, 허수아비, 향이 느껴지는 비닐하우스,<br> 가지런한 농기구,
-                            뒷마당 작은 저장고가 표현된 한적한 시골의 컨셉 전시 공간입니다.<br> 다채로운 컬러의 농작물이
-                            햇볕에 널어져 있는 장면과 뒷마당 주차된 트랙터, 농기구가 공간 곳곳에 비누로 제작되어<br>
-                            이야기와 향으로 기억되는 심화된 비누 세계관을 경험할 수 있습니다.<br>
-                            성수 팝업 전시 공간에서는 엄세희, 신미경 아티스트 2명과 함께 합니다. <br>
-                            섬세한 디테일로 완성된 다양한 아트워크와 감각적인 비누들을 공감각적으로 체험 해보세요.
-                        </p>
-                        <p>2023. 04. 28 - 2023. 05. 28</p>
-                        <p>서울 성동구 연무장5길 8</p>
-                    </div>
-
-                    <div id="slwrap4">
-                        <ul class="slideimg4">
-                            <li><img src="img/sub/harvestsoapexhibitTWe_.png" alt="harvestsoapexhibit"></li>
-                            <li><img src="img/sub/harvestsoapexhibitsix.png" alt="harvestsoapexhibit"></li>
-                            <li><img src="img/sub/harvestsoapexhibitthr.png" alt="harvestsoapexhibit"></li>
-                            <li><img src="img/sub/harvestsoapexhibitfour.png" alt="harvestsoapexhibit"></li>
-                            <li><img src="img/sub/harvestsoapexhibittwo.png" alt="harvestsoapexhibit"></li>
-                            <li><img src="img/sub/harvestsoapexhibitEig_.jpg" alt="harvestsoapexhibit"></li>
-                            <li><img src="img/sub/harvestsoapexhibitEle_.png" alt="harvestsoapexhibit"></li>
-                            <li><img src="img/sub/harvestsoapexhibit.png" alt="harvestsoapexhibit"></li>
-                            <li><img src="img/sub/harvestsoapexhibitfive.png" alt="harvestsoapexhibit"></li>
-                        </ul>
-
-                        <span class="prev">&lt;</span>
-                        <span class="next">&gt;</span>
-                    </div>
-
-                </div>
-
-
-
-                <div id="inner5">
-                    <div id="text">
-                        <h3>퍼퓸밤 컬렉션</h3>
-                        <p>감각적으로 향을 즐길 수 있는 새로운 형태의 퍼퓸밤. <br>
-                            아이코닉한 퍼퓸 밤 디자인은 탬버린즈 퍼퓸의 일부가 미러링된 형태로 확장된 퍼퓸의
-                            페르소나를 표현합니다. <br>향수 컬렉션의 연장선인 ‘퍼퓸밤’의 런칭을 맞이하여
-                            청량한 컬러감이 돋보이는 조형물을 선보입니다. <br>산뜻한 향기로 가득 채워진
-                            팝업공간은 하우스 도산에서 바로 만나보실 수 있으며,<br> 평면화된 이미지를 통해 사물을
-                            디테일하게 관찰하도록 작업하는 김경태 작가와 탬버린즈가 함께 향의 피사체를 선사합니다. <br>
-                            자연의 향에서 기반된 향수 라인의 시그니처 향인
-                            Chamo를 고체향수로 새롭게 경험 할 수 있는 순간이 되길 바랍니다.
-                        </p>
-                        <p>2022. 11. 25 - 2022. 12. 18</p>
-                        <p>서울 강남구 압구정로46길 50 하우스도산</p>
-                    </div>
-
-                    <div id="slwrap5">
-                        <ul class="slideimg5">
-                            <li><img src="img/sub/solaceperfumebalmexhibittwo.png" alt="perfumebalmexhibit"></li>
-                            <li><img src="img/sub/solaceperfumebalmexhibitThr.png" alt="perfumebalmexhibit"></li>
-                            <li><img src="img/sub/solaceperfumebalmexhibit.png" alt="perfumebalmexhibit"></li>
-                            <li><img src="img/sub/solaceperfumebalmexhibitFour.png" alt="perfumebalmexhibit"></li>
-                        </ul>
-
-                        <span class="prev">&lt;</span>
-                        <span class="next">&gt;</span>
-                    </div>
-
-                </div>
-
-                <div id="inner6">
-                    <div id="text">
-                        <h3>향수 컬렉션</h3>
-                        <p>첫 향수 컬렉션 전시에 당신을 초대합니다. <br>
-                            탬버린즈는 향수를 보여주는 일반적인 방식의 틀을 벗어나 새로운 향수
-                            세계관을 확장하는 것에 중점을 두었습니다.<br> 첫 향수 캠페인 주제는
-                            &lt;solace: 한 줌의 위안&gt; 입니다.<br> 이번 전시는 위안과 함께 공존하는
-                            다양한 감정들을 오롯이 공간에 표현하고자 했으며<br> 존재감이 압도적인
-                            아트 인스톨레이션(거인)은 탬버린즈의 정신성, 정체성과도 닮아 있으며,
-                            캠페인의 네러티브를 상상하게 만듭니다.<br> 공간 전체를 감싸는
-                            아트 사운드 &#39;CHAMO sound exhibition duration ca.10&#39; 도 전시장에서
-                            감상해보세요.<br>
-                        </p>
-                        <p style="font-family: 'Noto Serif KR', serif; font-weight: 500;
-                        font-size: 15px; margin-bottom: 10px;">
-                            &quot;눈에 보이지 않는 감각은 언제나 우리의 삶을 더욱 풍요롭게
-                            만든다.<br> 대상의 움직임을 정확히 알 수 없지만 그 존재는 우리의 순간을 더욱
-                            분명하게 만든다.<br> 그렇게 CHAMO는 음악이 되고 향이 되어 우리에게 한 줌의
-                            위로를건네는 것은 아닐까.&quot;
-                        </p>
-                        <p>2022. 11. 25 - 2022. 12. 18</p>
-                        <p>서울 강남구 압구정로46길 50 하우스도산</p>
-                    </div>
-
-                    <div id="slwrap6">
-                        <ul class="slideimg6">
-                            <li><img src="img/sub/objet_.png" alt="objet"></li>
-                            <li><img src="img/sub/perfumecollectionFive.png" alt="perfumecollection"></li>
-                            <li><img src="img/sub/perfumecollectionFour.png" alt="perfumecollection"></li>
-                            <li><img src="img/sub/perfumecollectionSix.png" alt="perfumecollection"></li>
-                            <li><img src="img/sub/perfumecollectionTwo.png" alt="perfumecollection"></li>
-                            <li><img src="img/sub/perfumecollection.png" alt="perfumecollection"></li>
-                        </ul>
-
-                        <span class="prev">&lt;</span>
-                        <span class="next">&gt;</span>
-                    </div>
-
-                </div>
-
-                <div id="inner7">
-                    <div id="text">
-                        <h3 style="font-size: 17px; font-style: italic;">SOUND PERFORMANCE GRAYCODE, jiiiiin</h3>
-                        <p style="margin-bottom: 0px;">
-                            Perfume Collection &lt; Collaboration with Artist GRAYCODE, jiiiiin &gt; <br>
-                            탬버린즈 향수 전시 공간의 사운드를 제작한 아티스트 그룹 GRAYCODE와 jiiiiin의 공연에 초대합니다.<br>
-                            공연은 건물의 특이한 구조를 활용하여 2개의 층에서 연주가 동시에 진행됩니다.<br>
-                            공간 전체를 채우는 전자음악과 피아노 사운드와 함께 퍼지는
-                            카모향&#40; CHAMO &#41;의 공감각적인 스토리를 경험해보세요.
-                        </p>
-                    </div>
-
-                    <div id="slwrap7">
-                        <ul class="slideimg7">
-                            <li><img src="img/sub/soundperformance_.png" alt="perfumebalmexhibit"></li>
-                            <li><img src="img/sub/soundperformanceThr.png" alt="perfumebalmexhibit"></li>
-                            <li><img src="img/sub/soundperformanceFour.png" alt="perfumebalmexhibit"></li>
-                            <li><img src="img/sub/soundperformanceTwo.png" alt="perfumebalmexhibit"></li>
-                        </ul>
-
-                        <span class="prev">&lt;</span>
-                        <span class="next">&gt;</span>
-                    </div>
-
-                </div>
-
-                <div id="inner8">
-                    <div id="text">
-                        <h3>샤워리바디 컬렉션</h3>
-                        <p>&#91; DAY DREAM: 공상 &#93; 전시는 일상에서 채워지지 않은 우리의 공허함과 
-                            이를 채우려는 욕망에 대한 이야기입니다.<br> 탬버린즈의 새로운 네가지 
-                            향&#40; BIGALICO, FOG, NIMBUS, STORM &#41;은 자연에서 영감을 받은 향으로 
-                            샤워를 하며 떠올린 공상의 한 장면을 시각화한 전시공간입니다. <br>
-                            폭풍이 지나간 자리에 새싹이 움트는 것처럼, 시원한 비가 지난 뒤 남은 
-                            고요한 시간에 우리는 사고가 무한히 확장되는듯한 <br>일종의 해방감과 함께 
-                            맑아진 머릿속이 창의적인 영감으로 가득 메워지는 경이로운 경험을 하기도 
-                            합니다.<br> 비는 마치 작은 구름이 되어 오렌지밭 위를 지나며 싱그러움을 
-                            전하고 때로는 잘게 부서진 안개로 주위를 부유하며 포근히 감싸 안듯이 
-                            마음을 어루만져 주는듯 합니다.<br> 자연에서 내리는 비가 선사하는 다양한 
-                            영감을 담고 있는 샤워리바디 컬렉션으로 탬버린즈가 선사하는 비의 이야기를 만나보세요.
-                        </p>
-                        <p>2022. 06. 04 - 2022. 06. 30</p>
-                        <p>서울 강남구 압구정로46길 50 하우스도산</p>
-                    </div>
-
-                    <div id="slwrap8">
-                        <ul class="slideimg8">
-                            <li><img src="img/sub/solaceperfumebalmexhibittwo.png" alt="perfumebalmexhibit"></li>
-                            <li><img src="img/sub/solaceperfumebalmexhibitThr.png" alt="perfumebalmexhibit"></li>
-                            <li><img src="img/sub/solaceperfumebalmexhibit.png" alt="perfumebalmexhibit"></li>
-                            <li><img src="img/sub/solaceperfumebalmexhibitFour.png" alt="perfumebalmexhibit"></li>
-                        </ul>
-
-                        <span class="prev">&lt;</span>
-                        <span class="next">&gt;</span>
-                    </div>
-
-                </div>
-
-            </div>
-
+            
         </div>
-
-
-
-
-
+        
+        
+        
         <footer>
             <h1>Visual and tactile pleasure</h1><br>
             <h4>TAMBURINS CEO<span>김한국</span></h4><br>
             <span><b>Email</b>&nbsp;&nbsp;&nbsp;cs@tamburins.com<strong>&nbsp;&nbsp;&nbsp;&nbsp;|</strong></span>
             <span><b>C/S</b>&nbsp;&nbsp;&nbsp;1644-1246&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
-            <span><b>Mall Order License</b>&nbsp;&nbsp;&nbsp;제 2014-서울마포-1050 호
-                &#91;사업자정보확인&#93;<strong>&nbsp;&nbsp;&nbsp;&nbsp;|</strong></span>
+            <span><b>Mall Order License</b>&nbsp;&nbsp;&nbsp;제 2014-서울마포-1050 호 &#91;사업자정보확인&#93;<strong>&nbsp;&nbsp;&nbsp;&nbsp;|</strong></span>
             <span><b>Business License</b> &nbsp;&nbsp;&nbsp;-86-38589&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
-            <span><b>Adress</b>&nbsp;&nbsp;&nbsp;서울특별시 마포구 어울마당로5길 41(41, Eoulmadang-ro 5-gil, Mapo-gu, Seoul, Republic
-                of
-                Korea)</span><br><br>
+            <span><b>Adress</b>&nbsp;&nbsp;&nbsp;서울특별시 마포구 어울마당로5길 41(41, Eoulmadang-ro 5-gil, Mapo-gu, Seoul, Republic of Korea)</span><br><br>
             <p>© TAMBURINS KR</p>
         </footer>
 
     </div>
 </body>
-
 </html>
