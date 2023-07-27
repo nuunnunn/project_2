@@ -20,158 +20,7 @@
         rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script>
-        $(function () {
-
-            //메뉴 바 누르면 사이드 메뉴 보임
-            $('.menu_trigger').on('click', function (e) {
-                e.preventDefault();
-                $(this).toggleClass('active');
-                $('#mynav').toggleClass('right');
-                $('.menu_trigger span').toggleClass('spanch');
-            });
-
-
-            //slide img
-            // if (window.matchMedia("(min-width: 1500px)").matches) {
-
-            $('#slwrap .prev').click(function () {
-                $('.slideimg li:last').prependTo('.slideimg');
-                $('.slideimg').css('margin-left', '-53%');
-                $('.slideimg').stop().animate({ marginLeft: 0 }, 800);
-            });
-
-            $('#slwrap .next').click(function () {
-                $('.slideimg').stop().animate({ marginLeft: '-53%' }, 800, function () {
-                    $('.slideimg li:first').appendTo('.slideimg');
-                    $('.slideimg').css({ marginLeft: 0 });
-                });
-            });
-
-            // }
-
-            //slide img2
-            // if (window.matchMedia("(min-width: 1500px)").matches) {
-
-            $('#slwrap2 .prev').click(function () {
-                $('.slideimg2 li:last').prependTo('.slideimg2');
-                $('.slideimg2').css('margin-left', '-52.5%');
-                $('.slideimg2').stop().animate({ marginLeft: 0 }, 800);
-            });
-
-            $('#slwrap2 .next').click(function () {
-                $('.slideimg2').stop().animate({ marginLeft: '-52.5%' }, 800, function () {
-                    $('.slideimg2 li:first').appendTo('.slideimg2');
-                    $('.slideimg2').css({ marginLeft: 0 });
-                });
-            });
-
-            // }
-
-            //slide img3
-            // if (window.matchMedia("(min-width: 1500px)").matches) {
-
-            $('#slwrap3 .prev').click(function () {
-                $('.slideimg3 li:last').prependTo('.slideimg3');
-                $('.slideimg3').css('margin-left', '-52.5%');
-                $('.slideimg3').stop().animate({ marginLeft: 0 }, 800);
-            });
-
-            $('#slwrap3 .next').click(function () {
-                $('.slideimg3').stop().animate({ marginLeft: '-52.5%' }, 800, function () {
-                    $('.slideimg3 li:first').appendTo('.slideimg3');
-                    $('.slideimg3').css({ marginLeft: 0 });
-                });
-            });
-
-            // }
-
-            //slide img4
-            // if (window.matchMedia("(min-width: 1500px)").matches) {
-
-            $('#slwrap4 .prev').click(function () {
-                $('.slideimg4 li:last').prependTo('.slideimg4');
-                $('.slideimg4').css('margin-left', '-35%');
-                $('.slideimg4').stop().animate({ marginLeft: 0 }, 800);
-            });
-
-            $('#slwrap4 .next').click(function () {
-                $('.slideimg4').stop().animate({ marginLeft: '-35%' }, 800, function () {
-                    $('.slideimg4 li:first').appendTo('.slideimg4');
-                    $('.slideimg4').css({ marginLeft: 0 });
-                });
-            });
-
-            // }
-
-            //slide img5
-            // if (window.matchMedia("(min-width: 1500px)").matches) {
-
-            $('#slwrap5 .prev').click(function () {
-                $('.slideimg5 li:last').prependTo('.slideimg5');
-                $('.slideimg5').css('margin-left', '-52.5%');
-                $('.slideimg5').stop().animate({ marginLeft: 0 }, 800);
-            });
-
-            $('#slwrap5 .next').click(function () {
-                $('.slideimg5').stop().animate({ marginLeft: '-52.5%' }, 800, function () {
-                    $('.slideimg5 li:first').appendTo('.slideimg5');
-                    $('.slideimg5').css({ marginLeft: 0 });
-                });
-            });
-
-            // }
-
-            //slide img6
-            // if (window.matchMedia("(min-width: 1500px)").matches) {
-
-            $('#slwrap6 .prev').click(function () {
-                $('.slideimg6 li:last').prependTo('.slideimg6');
-                $('.slideimg6').css('margin-left', '-52.5%');
-                $('.slideimg6').stop().animate({ marginLeft: 0 }, 800);
-            });
-
-            $('#slwrap6 .next').click(function () {
-                $('.slideimg6').stop().animate({ marginLeft: '-52.5%' }, 800, function () {
-                    $('.slideimg6 li:first').appendTo('.slideimg6');
-                    $('.slideimg6').css({ marginLeft: 0 });
-                });
-            });
-
-            // }
-
-            //slide img7
-            // if (window.matchMedia("(min-width: 1500px)").matches) {
-
-            $('#slwrap7 .prev').click(function () {
-                $('.slideimg7 li:last').prependTo('.slideimg7');
-                $('.slideimg7').css('margin-left', '-52.5%');
-                $('.slideimg7').stop().animate({ marginLeft: 0 }, 800);
-            });
-
-            $('#slwrap7 .next').click(function () {
-                $('.slideimg7').stop().animate({ marginLeft: '-52.5%' }, 800, function () {
-                    $('.slideimg7 li:first').appendTo('.slideimg7');
-                    $('.slideimg7').css({ marginLeft: 0 });
-                });
-            });
-
-            // }
-
-
-            $('#butn').click(function () {
-                $('#innerwrap').fadeIn('slow');
-                $('#innerwrap2').hide();
-            });
-
-            $('#butn2').click(function () {
-                $('#innerwrap2').fadeIn('slow');
-                $('#innerwrap').hide();
-            });
-
-
-        });
-    </script>
+    <script src="js/sub.js"></script>
 </head>
 
 <body>
@@ -293,6 +142,68 @@
 
                 </div>
 
+
+
+                <div id="candle">
+                    <div id="obj">
+                        <div id="objtext">
+                            <h2>In Samcheong</h2>
+                            <h3>&lt; SAMCHEONG EDITION : BLOOMING CANDLE &gt;</h3>
+                            <p>공예적 특성이 돋보이는 리미티드 캔들은<br> 나만의 공간에 아름다움을 
+                                더하는 인테리어 오브젝트로써<br> 일상적인 공간이
+                                비일상으로 전환되는 특별한 감정을 선사합니다.<br>
+                                블루밍 캔들이 선사하는 따스함과 매력적인 향을 통해<br> 나만의 
+                                공간에서 소중한 사람들과의 잊지 못할 순간들을 다시금 떠올릴 수 
+                                있는 경험이 되길 바랍니다.
+                            </p>
+                        </div>
+    
+                        <div id="candleSl">
+                            <ul class="candleSlImg">
+                                <li><img src="img/sub/bloomingcandleFour_.png" alt="bloomingcandle"></li>
+                                <li><img src="img/sub/bloomingcandleFive.png" alt="bloomingcandle"></li>
+                                <li><img src="img/sub/bloomingcandle.png" alt="bloomingcandle"></li>
+                                <li><img src="img/sub/bloomingcandleTwo_.png" alt="bloomingcandle"></li>
+                                <li><img src="img/sub/bloomingcandleThr.png" alt="bloomingcandle"></li>
+                            </ul>
+    
+                            <span class="objprev">&lt;</span>
+                            <span class="objnext">&gt;</span>
+                        </div>
+    
+                    </div>
+    
+    
+                    <div id="obj2">
+                        <div id="objtext">
+                            <h2>In Dosan</h2>
+                            <p>하나씩 정성을 들여 수작업으로 제작되는 '올팩티브 아카이브 캔들은'<br>
+                                가장 원초적인 자연에 대한 접근에서 비롯되었습니다.<br>
+                                콘크리트로 이루어진 캔들 표면의 자연스러운 텍스쳐는<br> 마치 얼어붙은
+                                대지 위에 펼펴진 설경과 빙산의 일부분을 떠올리게 합니다.<br>
+                                기억의 향기를 담은 따뜻한 불씨가 당신의 공간을 안락함으로 채워줍니다.<br>
+                                하우스 도산에서 캔들을 위해 준비된 특별한 공간을 경험해보세요.</p>
+                        </div>
+    
+                        <div id="candleSl2">
+                            <ul class="candleSlImg2">
+                                <li><img src="img/sub/archaiveFive_.png" alt="storesamchung"></li>
+                                <li><img src="img/sub/archaiveFour_.png" alt="storesamchung"></li>
+                                <li><img src="img/sub/archaiveThr_.png" alt="storesamchung"></li>
+                                <li><img src="img/sub/candletwo_.png" alt="storesamchung"></li>
+                                <li><img src="img/sub/limitedcandleset_.png" alt="storesamchung"></li>
+                                <li><img src="img/sub/candlethr.png" alt="storesamchung"></li>
+                                <li><img src="img/sub/candle_.png" alt="storesamchung"></li>
+                            </ul>
+    
+                            <span class="objprev">&lt;</span>
+                            <span class="objnext">&gt;</span>
+                        </div>
+    
+                    </div>
+    
+                </div>
+
             </div>
 
 
@@ -332,7 +243,6 @@
                 </div>
 
 
-
                 <div id="inner5">
                     <div id="text">
                         <h3>퍼퓸밤 컬렉션</h3>
@@ -362,6 +272,7 @@
                     </div>
 
                 </div>
+
 
                 <div id="inner6">
                     <div id="text">
@@ -403,10 +314,11 @@
 
                 </div>
 
+
                 <div id="inner7">
                     <div id="text">
                         <h3 style="font-size: 17px; font-style: italic;">SOUND PERFORMANCE GRAYCODE, jiiiiin</h3>
-                        <p style="margin-bottom: 0px;">
+                        <p>
                             Perfume Collection &lt; Collaboration with Artist GRAYCODE, jiiiiin &gt; <br>
                             탬버린즈 향수 전시 공간의 사운드를 제작한 아티스트 그룹 GRAYCODE와 jiiiiin의 공연에 초대합니다.<br>
                             공연은 건물의 특이한 구조를 활용하여 2개의 층에서 연주가 동시에 진행됩니다.<br>
@@ -429,6 +341,7 @@
 
                 </div>
 
+
                 <div id="inner8">
                     <div id="text">
                         <h3>샤워리바디 컬렉션</h3>
@@ -450,10 +363,46 @@
 
                     <div id="slwrap8">
                         <ul class="slideimg8">
-                            <li><img src="img/sub/solaceperfumebalmexhibittwo.png" alt="perfumebalmexhibit"></li>
-                            <li><img src="img/sub/solaceperfumebalmexhibitThr.png" alt="perfumebalmexhibit"></li>
-                            <li><img src="img/sub/solaceperfumebalmexhibit.png" alt="perfumebalmexhibit"></li>
-                            <li><img src="img/sub/solaceperfumebalmexhibitFour.png" alt="perfumebalmexhibit"></li>
+                            <li><img src="img/sub/showerybodyEig_.png" alt="objet"></li>
+                            <li><img src="img/sub/showerybodyFive_.png" alt="perfumecollection"></li>
+                            <li><img src="img/sub/showerybodySev_.png" alt="perfumecollection"></li>
+                            <li><img src="img/sub/showerybodySix_.png" alt="perfumecollection"></li>
+                            <li><img src="img/sub/showerybodyFour_.png" alt="perfumecollection"></li>
+                            <li><img src="img/sub/showerybodyTwo_.png" alt="perfumecollection"></li>
+                        </ul>
+
+                        <span class="prev">&lt;</span>
+                        <span class="next">&gt;</span>
+                    </div>
+
+                </div>
+
+
+                <div id="inner9">
+                    <div id="text">
+                        <h3>코쿤 컬렉션</h3>
+                        <p>코쿤 컬렉션 전시는 탬버린즈의 세 번째 핸드크림 컬렉션 &#39;올팩티브 아카이브 
+                            &#40; OLFACTIVE ARCHIVE &#41;&#39;의 런칭을 기념하여 새롭게 공개하는 향의 스토리를 담은 
+                            프로젝트입니다. <br> 올팩티브 아카이브에 영감을 준 OLFACTION은 향을 주관적인 
+                            경험이나 이미지와 결합해 기억하는 방식으로,<br> 올팩티브 아카이브의 첫 번째 
+                            컬렉션인 코쿤 컬렉션은 어린 시절 들었던 누에고치가 뽕잎을 갉아먹는 소리의 
+                            경험을 향으로 형상화하고 탬버린즈의 언어로 재구성한 기록입니다. <br>
+                            전시장 내부의 공간을 압도하는 대형 누에 키네틱을 비롯한 다양한 아트피스는 
+                            향이 내포하고 있는 다양한 스토리를 탬버린즈의 시각으로 마주하게 합니다. <br>
+                            표면적으로 지나쳐가는 향이 아닌, 그 시간의, 그 순간의, 그 상황을 
+                            그리는&#91; MISS &#93; 애틋함에서 풍겨져 나오는 내면의 향에 집중하기 위해<br> 각 향의 
+                            OLFACTIVE ARCHIVE&#40; 올팩티브 아카이브 &#41;를 예측 불가능한 방식으로 경험할 수 있습니다.
+                        </p>
+                        <p>2021.10. 20 - 2021.11.21</p>
+                        <p>서울특별시 성동구 성수이로 20길 57</p>
+                    </div>
+
+                    <div id="slwrap9">
+                        <ul class="slideimg9">
+                            <li><img src="img/sub/cocoonFive.png" alt="cocoon"></li>
+                            <li><img src="img/sub/cocoonFour.png" alt="cocoon"></li>
+                            <li><img src="img/sub/cocoonThr.png" alt="cocoon"></li>
+                            <li><img src="img/sub/cocoonCream_.png" alt="cocoon"></li>
                         </ul>
 
                         <span class="prev">&lt;</span>

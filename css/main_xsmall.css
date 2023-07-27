@@ -48,9 +48,8 @@
         display: flex; flex-direction: column;
     }
 
-    #articlewrap #artione{ width: 100%; height: 230px; border-style: none solid solid none; 
-        border-width: 1px; border-color: #999; display: flex; flex-wrap: wrap; 
-        position: relative;
+    #articlewrap #artione{ width: 100%; height: 230px; border-bottom: 1px solid #999; 
+        display: flex; flex-wrap: wrap; position: relative;
     }
     #articlewrap #artione::after{content: ""; width: 100%; height: 0%; background: #111;
         position: absolute; bottom: 0; left: 0; transition: height 0.3s ease-in-out;
@@ -75,8 +74,8 @@
     #artione .out img{width: 60px; position: relative; z-index: 3;
         transform: translateX(50px); transition: all 3s; opacity: 0;}
 
-    #articlewrap #artitwo{ width: 100%; height: auto; border-style: none solid solid none; 
-        border-width: 1px; border-color: #999; display: flex; flex-wrap: wrap;
+    #articlewrap #artitwo{ width: 100%; height: auto; border-bottom: 1px solid #999; 
+        display: flex; flex-wrap: wrap;
     }
     #artitwo .imgbox{ width: 100%; height: 270px; background-image: url(../img/main/creamon_horiz.png);
         background-position: center; background-size: cover;
@@ -139,8 +138,7 @@
     #sewraptwo #articlewraptwo{width: 100%; display: flex; flex-wrap: wrap;}
     #articlewraptwo a{width: 100%; height: 160px;}
     #articlewraptwo #artithr{
-        width: 100%; height: 100%; border-style: none none solid solid; border-width: 1px; 
-        border-color: #999; position: relative;
+        width: 100%; height: 100%; border-bottom: 1px solid #999; position: relative;
     }
     #artithr p{transform: translateX(300px); transition: all 2s; opacity: 0;}
     #artithr p:first-of-type{width: 100%; height: 50%; font-size: 15px; 
@@ -156,8 +154,7 @@
     }
     
     #articlewraptwo #artifour{
-        width: 100%; height: 100%; border-style: none none solid solid; border-width: 1px; 
-        border-color: #999; position: relative;
+        width: 100%; height: 100%; border-bottom: 1px solid #999; position: relative;
     }
     #artifour p{transform: translateX(300px); transition: all 2s; opacity: 0;}
     #artifour p:first-of-type{width: 100%; height: 50%; font-size: 15px; 
@@ -174,14 +171,14 @@
 
 
     #bannertwo{
-        width: 100%; height: 350px; border-bottom: 1px solid #999; padding: 20px;
+        width: 100%; height: 500px; border-bottom: 1px solid #999; padding: 20px;
     }
-    #slidewrap {width: 100%; height: 250px; margin: 5% auto; position: relative;
+    #slidewrap {width: 70%; height: 90%; margin: 10% auto; position: relative;
         overflow:hidden;}
-    #slidewrap .slide {width: 950%; display: flex;}
+    #slidewrap .slide {width: 1900%; height: 100%; display: flex;}
     #slidewrap .slide li {width: 25%; height: auto; text-align: center; }
     #slidewrap .slide li img {width: 100%; height: auto; padding: 10px;}
-    #slidewrap span {position: absolute; top:55%; display: block; font-size: 38px; color:#fff; 
+    #slidewrap span {position: absolute; top:50%; display: block; font-size: 38px; color:#fff; 
         line-height: 40px; cursor: pointer; height: 50px; background: #333; opacity: 0.7;
         transform: translateY(-50%); }
     #slidewrap span:hover {opacity: 0.9;}
