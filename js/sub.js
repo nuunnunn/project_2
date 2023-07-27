@@ -53,6 +53,36 @@ $(function () {
             });
         });
 
+
+        //objslide img
+        $('#candleSl .objprev').click(function () {
+            $('.candleSlImg li:last').prependTo('.candleSlImg');
+            $('.candleSlImg').css('margin-left', '-100%');
+            $('.candleSlImg').stop().animate({ marginLeft: 0 }, 800);
+        });
+
+        $('#candleSl .objnext').click(function () {
+            $('.candleSlImg').stop().animate({ marginLeft: '-100%' }, 800, function () {
+                $('.candleSlImg li:first').appendTo('.candleSlImg');
+                $('.candleSlImg').css({ marginLeft: 0 });
+            });
+        });
+
+        //objslide img2
+        $('#candleSl2 .objprev').click(function () {
+            $('.candleSlImg2 li:last').prependTo('.candleSlImg2');
+            $('.candleSlImg2').css('margin-left', '-100%');
+            $('.candleSlImg2').stop().animate({ marginLeft: 0 }, 800);
+        });
+
+        $('#candleSl2 .objnext').click(function () {
+            $('.candleSlImg2').stop().animate({ marginLeft: '-100%' }, 800, function () {
+                $('.candleSlImg2 li:first').appendTo('.candleSlImg2');
+                $('.candleSlImg2').css({ marginLeft: 0 });
+            });
+        });
+
+
         //slide img4
         $('#slwrap4 .prev').click(function () {
             $('.slideimg4 li:last').prependTo('.slideimg4');
