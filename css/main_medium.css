@@ -5,7 +5,7 @@
         width: 100%; height: auto; position: fixed; z-index: 4;
     }
     #menu{ display: flex; justify-content: space-between; flex-direction: row;
-        width: 100%; height: 80px; padding: 24px 50px; 
+        width: 100%; height: 80px; padding: 25px; 
         transition: all 2s ease-in-out; 
     }
     #menu ul{
@@ -174,11 +174,13 @@
     #bannertwo{
         width: 100%; height: 435px; border-bottom: 1px solid #999;
     }
-    #slidewrap {width: 90%; height: 330px; margin: 6% auto; position: relative; 
+    #slidewrap {width: 90%; height: 330px; margin: 4% auto; position: relative; 
         overflow:hidden;}
     #slidewrap .slide {width: 610%; display: flex; padding: 20px;}
     #slidewrap .slide li {width: 25%; height: 100%; text-align: center; }
-    #slidewrap .slide li img {width: 100%; height: 100%; padding: 30px;}
+    #slidewrap .slide li img {width: 100%; height: 100%; padding: 30px;
+        max-width: 300px;
+    }
     #slidewrap span {position: absolute; top:55%; display: block; font-size: 38px; color:#444; 
         line-height: 40px; cursor: pointer; height: 50px; 
         transform: translateY(-50%); }

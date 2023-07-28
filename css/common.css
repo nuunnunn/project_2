@@ -69,7 +69,6 @@ footer p{font-size: 11px; margin: 20px 0 0 10px;}
 
 
 @media(min-width:1200px) and (max-width:1500px){
-    #menu{ padding: 25px; }
     #mynav.overlay.right{width: 35%;}
     #menu > a{width: 16%; height: auto;}
     #menu .login{width: 17px; height: 21px; margin-top: 2px;}
@@ -84,7 +83,6 @@ footer p{font-size: 11px; margin: 20px 0 0 10px;}
 }
 
 @media(min-width:1000px) and (max-width:1199px){
-    #menu{ padding: 25px; }
     #mynav.overlay.right{width: 40%;}
     #menu .login{width: 16px; height: 19px; margin-top: 2px;}
     #menu .cart{width: 23px;}
@@ -98,7 +96,6 @@ footer p{font-size: 11px; margin: 20px 0 0 10px;}
 }
 
 @media(min-width:819px) and (max-width:999px){
-    #menu{ padding: 25px; }
     #mynav.overlay.right{width: 50%;}
     .overlay a{font-size: 37px;}
     #menu .login{width: 16px; height: 19px; margin-top: 2px;}
@@ -114,7 +111,6 @@ footer p{font-size: 11px; margin: 20px 0 0 10px;}
 
 
 @media(min-width:690px) and (max-width:820px){
-    #menu{ padding: 25px; }
     #menu .login{width: 15px; height: 18px; margin-top: 2px;}
     #menu .cart{width: 21px; margin-top: 2px;}
     .menu_trigger{ width: 20px; height: 12px;}
@@ -145,7 +141,6 @@ footer p{font-size: 11px; margin: 20px 0 0 10px;}
 }
 
 @media(max-width:689px){
-    #menu{ padding: 25px; }
     #mynav.overlay.right{width: 100%;}
     .overlay:hover, .overlay:focus{opacity: 1;}
     .overlay a{font-size: 30px;}
