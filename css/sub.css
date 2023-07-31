@@ -29,7 +29,7 @@ header{ position: fixed; top: 0; background: #f6f5f1; z-index: 3;
 #content #butn{ display: flex; flex-wrap: wrap; justify-content: center;
     width: 44%; height: 100%; 
 }
-#content #butn label,#butn2 label{font-family: 'Noto Serif KR', serif;
+#content #butn span,#butn2 span{font-family: 'Noto Serif KR', serif;
     font-weight: 500; color: #444; font-size: 14px;
 }
 #butn button{border-radius: 30px; overflow: hidden; border: none; width: 100%;}
@@ -55,13 +55,14 @@ button:hover, label:hover{cursor: pointer; opacity: 0.9;}
     margin: 0 0 200px 0; height: 25%;
 }
 
-#text{width: 68%; text-align: center; line-height: 25px; 
+.text{width: 68%; text-align: center; line-height: 25px; 
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
-#text h3{margin-bottom: 10px;}
-#text p{font-size: 15px; font-weight: 500; }
-#text p:nth-child(2){margin-bottom: 10px;}
-#text p:last-child{margin-bottom: 50px;}
+.text h3{margin-bottom: 20px;}
+.text p{font-size: 15px; font-weight: 500; }
+.text p:nth-child(2){margin-bottom: 10px;}
+.text p:last-of-type{margin-bottom: 50px;}
+
 
 #inner #slwrap{width: 100%; height: auto; position: relative; overflow:hidden; 
     margin: 0 auto;
@@ -106,13 +107,12 @@ button:hover, label:hover{cursor: pointer; opacity: 0.9;}
     
 #candle #obj{width: 50%; display: flex; justify-content: center; flex-wrap: wrap;
     margin-right: 50px;}
-
-#objtext{width: 86%; text-align: center; line-height: 25px; 
+.objtext{width: 86%; text-align: center; line-height: 25px; 
     font-family: 'IBM Plex Sans KR', sans-serif;}
-#objtext h2{margin-bottom: 10px;}
-#objtext h3{margin-bottom: 10px;}
-#objtext p{font-size: 15px; font-weight: 500; }
-#objtext p:last-child{margin-bottom: 20px;}
+.objtext h2{margin-bottom: 10px;}
+.objtext h3{margin-bottom: 10px;}
+.objtext p{font-size: 15px; font-weight: 500; }
+.objtext p:last-child{margin-bottom: 30px;}
 
 #obj #candleSl{width: 90%; height: auto; position: relative; overflow:hidden; }
 #obj #candleSl .candleSlImg{width: 500%; height: 100%; display: flex;}
