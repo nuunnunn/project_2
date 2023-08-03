@@ -88,7 +88,7 @@
     }
     
     #sewrapone #asione{ width: 320px; height: auto; border-bottom: 1px solid #999;
-        padding: 295px 0 0 70px;
+        display: flex; justify-content: center; align-items: center;
     }
     #sewrapone #asione img{width: 180px; animation: rotate normal infinite 20s linear;
     }
