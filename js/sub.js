@@ -491,6 +491,7 @@ $(function () {
     }    
 
 
+    //버튼 누르면 섹션 바뀜
     $('#butn').click(function () {
         $('#innerwrap').fadeIn('slow');
         $('#innerwrap2').hide();

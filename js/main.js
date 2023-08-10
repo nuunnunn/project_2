@@ -81,7 +81,7 @@ $(document).ready(function () {
             $(this).toggleClass('active');
             $('#mynav').toggleClass('right');
             $('.menu_trigger span').toggleClass('spanch');
-    })
+    });
 
 
     //슬라이드 이미지 반응형
@@ -169,84 +169,19 @@ $(document).ready(function () {
     });
 
 
-    //hover 텍스트 밑 라인 움직임 반응형
-    if (window.matchMedia("(min-width:1500px)").matches) {
+    //hover 텍스트 밑 라인 움직임
+        var linewidht = $('#artithr p:last-of-type').width();
+        var linewidht2 = $('#artifour p:last-of-type').width();
         $('#artithr').hover(function () {
-            $(this).children('.line').stop().animate({ width: '27.5%' }, 1000);
+            $(this).children('.line').stop().animate({ width: linewidht }, 1000);
         }, function () {
             $(this).children('.line').stop().stop().animate({ width: '0%' }, 1000);
         });
 
         $('#artifour').hover(function () {
-            $(this).children('.line').stop().animate({ width: '17%' }, 1000);
+            $(this).children('.line').stop().animate({ width: linewidht2 }, 1000);
         }, function () {
             $(this).children('.line').stop().stop().animate({ width: '0%' }, 1000);
         });
-
-    } else if(window.matchMedia("(min-width:1300px) and (max-width:1499px)").matches) {
-        $('#artithr').hover(function () {
-            $(this).children('.line').stop().animate({ width: '38%' }, 1000);
-        }, function () {
-            $(this).children('.line').stop().stop().animate({ width: '0%' }, 1000);
-        });
-
-        $('#artifour').hover(function () {
-            $(this).children('.line').stop().animate({ width: '24%' }, 1000);
-        }, function () {
-            $(this).children('.line').stop().stop().animate({ width: '0%' }, 1000);
-        });
-
-    }else if(window.matchMedia("(min-width:980px) and (max-width:1299px)").matches) {
-        $('#artithr').hover(function () {
-            $(this).children('.line').stop().animate({ width: '57%' }, 1000);
-        }, function () {
-            $(this).children('.line').stop().stop().animate({ width: '0%' }, 1000);
-        });
-
-        $('#artifour').hover(function () {
-            $(this).children('.line').stop().animate({ width: '36%' }, 1000);
-        }, function () {
-            $(this).children('.line').stop().stop().animate({ width: '0%' }, 1000);
-        });
-
-    }else if(window.matchMedia("(min-width:768px) and (max-width:979px)").matches) {
-        $('#artithr').hover(function () {
-            $(this).children('.line').stop().animate({ width: '76%' }, 1000);
-        }, function () {
-            $(this).children('.line').stop().stop().animate({ width: '0%' }, 1000);
-        });
-
-        $('#artifour').hover(function () {
-            $(this).children('.line').stop().animate({ width: '48%' }, 1000);
-        }, function () {
-            $(this).children('.line').stop().stop().animate({ width: '0%' }, 1000);
-        });
-
-    }else if(window.matchMedia("(min-width:501px) and (max-width:767px)").matches) {
-        $('#artithr').hover(function () {
-            $(this).children('.line').stop().animate({ width: '33%' }, 1000);
-        }, function () {
-            $(this).children('.line').stop().stop().animate({ width: '0%' }, 1000);
-        });
-
-        $('#artifour').hover(function () {
-            $(this).children('.line').stop().animate({ width: '21%' }, 1000);
-        }, function () {
-            $(this).children('.line').stop().stop().animate({ width: '0%' }, 1000);
-        });
-
-    }else{
-        $('#artithr').hover(function () {
-            $(this).children('.line').stop().animate({ width: '51%' }, 1000);
-        }, function () {
-            $(this).children('.line').stop().stop().animate({ width: '0%' }, 1000);
-        });
-
-        $('#artifour').hover(function () {
-            $(this).children('.line').stop().animate({ width: '32%' }, 1000);
-        }, function () {
-            $(this).children('.line').stop().stop().animate({ width: '0%' }, 1000);
-        });
-    }
 
 });

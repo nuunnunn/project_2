@@ -107,6 +107,7 @@ footer p{font-size: 11px; margin: 20px 0 0 10px;}
     }
     .menu_trigger.active span:last-of-type{
         transform: translateY(-5.5px) rotate(45deg);}
+    footer{ padding: 50px 25px; }
 }
 
 
