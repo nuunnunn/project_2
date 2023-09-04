@@ -128,7 +128,7 @@
         font-weight: 200; color: #999;}
     #asitwo .asitwop p:last-of-type{width: 100%; height: 40%; font-size: 35px;
         font-family: 'Noto Serif KR', serif; font-family: 'IBM Plex Sans KR', sans-serif;
-        font-weight: 600; padding: 13% 0 0 25px; z-index: 3;
+        font-weight: 600; padding: 35px 0 0 25px; z-index: 3;
     }
     #asitwo .asitwoimg{width: 40%; padding: 60px 0 0 20%; display: none;}
     #asitwo .asitwoimg img{  z-index: 3;
@@ -145,7 +145,7 @@
         padding: 25px 0 0 25px;
         font-family: 'Noto Serif KR', serif; font-family: 'IBM Plex Sans KR', sans-serif;
         font-weight: 200; color: #999;}
-    #artithr p:last-of-type{width: 71%; height: 50%; font-size: 35px;
+    #artithr p:last-of-type{width: 75%; height: 50%; font-size: 35px;
         font-family: 'Noto Serif KR', serif; font-family: 'IBM Plex Sans KR', sans-serif;
         font-weight: 600; padding: 10px 0 0 25px;
     }
