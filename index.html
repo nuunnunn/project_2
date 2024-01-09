@@ -1,212 +1,271 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TAMBURINS</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/main_large.css">
-    <link rel="stylesheet" href="css/main_medium.css">
-    <link rel="stylesheet" href="css/main_mediumsmall.css">
-    <link rel="stylesheet" href="css/main_small.css">
-    <link rel="stylesheet" href="css/main_xsmall.css">
-    <link rel="stylesheet" href="css/common.css">
-    <script src="https://kit.fontawesome.com/0ddafc5ecc.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main_large.css" />
+    <link rel="stylesheet" href="css/main_medium.css" />
+    <link rel="stylesheet" href="css/main_mediumsmall.css" />
+    <link rel="stylesheet" href="css/main_small.css" />
+    <link rel="stylesheet" href="css/main_xsmall.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <script
+      src="https://kit.fontawesome.com/0ddafc5ecc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Acme&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Bree+Serif&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=IBM+Plex+Sans+KR:wght@300&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Merriweather:wght@700&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Noto+Serif+KR&family=Oswald&family=Pangolin&family=Rowdies&family=Special+Elite&family=Yatra+One&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Grandiflora+One&family=Hahmlet:wght@100&family=IBM+Plex+Sans+KR:wght@300&family=Nanum+Gothic:wght@700&family=Noto+Sans+KR:wght@500&family=Noto+Serif+KR:wght@200;900&display=swap" rel="stylesheet">
-
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Acme&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Bree+Serif&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=IBM+Plex+Sans+KR:wght@300&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Merriweather:wght@700&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Noto+Serif+KR&family=Oswald&family=Pangolin&family=Rowdies&family=Special+Elite&family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grandiflora+One&family=Hahmlet:wght@100&family=IBM+Plex+Sans+KR:wght@300&family=Nanum+Gothic:wght@700&family=Noto+Sans+KR:wght@500&family=Noto+Serif+KR:wght@200;900&display=swap"
+      rel="stylesheet"
+    />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="js/main.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="wrap">
+      <header>
+        <nav id="menu">
+          <a href="index.html"
+            ><img
+              src="img/main/tamburins_logo_display_transparent.png"
+              alt="logo"
+          /></a>
+          <ul>
+            <li class="show">
+              <a href="#"
+                ><img src="img/main/logintwo.png" alt="login" class="login"
+              /></a>
+            </li>
+            <li class="show">
+              <a href="#"
+                ><img src="img/main/cartthr.png" alt="cart" class="cart"
+              /></a>
+            </li>
+            <li>
+              <a href="#" class="menu_trigger">
+                <span></span>
+                <span></span>
+              </a>
+            </li>
+          </ul>
 
-        <header>
-                <nav id="menu">
-                    <a href="index.html"><img src="img/main/tamburins_logo_display_transparent.png" alt="logo"></a>
-                    <ul>
-                        <li class="show"><a href="#"><img src="img/main/logintwo.png" alt="login" class="login"></a></li>
-                        <li class="show"><a href="#"><img src="img/main/cartthr.png" alt="cart" class="cart"></a></li>
-                        <li>
-                            <a href="#" class="menu_trigger">
-                                <span></span>
-                                <span></span>
-                            </a>
-                        </li>
-                    </ul>
+          <div id="mynav" class="overlay">
+            <div class="overlay-content">
+              <a href="index.html">HOME</a>
+              <a href="sub.html">SHOP</a>
+              <a href="sub.html">SHOPPING STORY</a>
+              <a href="sub.html">NOTICE / Q & A</a>
+              <a href="sub.html">CONTACT</a>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-                    <div id="mynav" class="overlay">
+      <div id="slider">
+        <video
+          src="img/main/pc_toiletTeasing_vid.mp4"
+          loop
+          muted
+          autoplay
+        ></video>
+        <p>TAMBURINS</p>
+      </div>
 
-                        <div class="overlay-content">
-                            <a href="index.html">HOME</a>
-                            <a href="sub.html">SHOP</a>
-                            <a href="sub.html">SHOPPING STORY</a>
-                            <a href="sub.html">NOTICE / Q & A</a>
-                            <a href="sub.html">CONTACT</a>
-                        </div>
-                    </div>
-                </nav>
-        </header>
-        
-        <div id="slider">
-            <video src="img/main/pc_toiletTeasing_vid.mp4" loop muted autoplay></video>
-            <P>TAMBURINS</P>
+      <section>
+        <article id="sewrapone">
+          <div id="articlewrap">
+            <a href="sub.html">
+              <div id="artione">
+                <div class="inner">
+                  <p>store & exhibit</p>
+                  <p>SHOP</p>
+                </div>
+                <p class="out">
+                  <img src="img/main/arrow.png" alt="arrow" class="arrow" />
+                </p>
+              </div>
+            </a>
+
+            <div id="artitwo">
+              <div class="imgbox">
+                <img src="img/main/tamb_.png" alt="cream" />
+              </div>
+              <div class="pbox">
+                <p>
+                  세상에 흩어진 모든 이야기에서 영감을 받은 감각적인 향이 <br />
+                  단조로운 일상에 자유롭고 새로운 리듬을 부여합니다. <br />
+                  탬버린즈가 찾아낸 규정되지 않은 아름다움을 경험해보세요.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="asione">
+            <img src="img/main/circletext.png" alt="circletext" />
+            <!-- <img src="img/main/circletexttwo.png" alt="circletext"> -->
+            <!-- <img src="img/main/circletextthr.png" alt="circletext"> -->
+            <!-- <img src="img/main/circletextfour.png" alt="circletext"> -->
+          </div>
+        </article>
+
+        <div id="banner">
+          <p>Smell the colorful scents from nature</p>
         </div>
-        
-    
 
-
-
-        <section>
-
-            <article id="sewrapone">
-
-                <div id="articlewrap">
-
-                    
-                    <a href="sub.html">
-                        <div id="artione">
-                            <div class="inner">
-                                <p>store & exhibit</p>
-                                <p>SHOP</p>
-                            </div>
-                            <p class="out">
-                                <img src="img/main/arrow.png" alt="arrow" class="arrow">
-                            </p>
-                        </div>
-                    </a>
-                    
-
-                    <div id="artitwo">
-                        <div class="imgbox"><img src="img/main/tamb_.png" alt="cream"></div>
-                        <div class="pbox">
-                            <p>
-                                세상에 흩어진 모든 이야기에서 영감을 받은 감각적인 향이 <br>
-                                단조로운 일상에 자유롭고 새로운 리듬을 부여합니다. <br>
-                                탬버린즈가 찾아낸 규정되지 않은 아름다움을 경험해보세요.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            
-                <div id="asione">
-                    <img src="img/main/circletext.png" alt="circletext">
-                    <!-- <img src="img/main/circletexttwo.png" alt="circletext"> -->
-                    <!-- <img src="img/main/circletextthr.png" alt="circletext"> -->
-                    <!-- <img src="img/main/circletextfour.png" alt="circletext"> -->
-                </div>
-
-            </article>
-
-
-
-            <div id="banner">
-                <p>Smell the colorful scents from nature</p>
+        <article id="sewraptwo">
+          <a href="sub.html" class="twoOfOne">
+            <div id="asitwo">
+              <div class="asitwop">
+                <p>product story</p>
+                <p>SHOPPING STORY</p>
+              </div>
+              <div class="asitwoimg">
+                <img
+                  src="img/main/tamburins_logo_coltwo.png"
+                  alt="verticallogo"
+                />
+              </div>
             </div>
+          </a>
 
+          <div id="articlewraptwo">
+            <a href="sub.html">
+              <div id="artithr">
+                <p>about TAMBURINS</p>
+                <p>NOTICE / Q & A</p>
+                <div class="line"></div>
+              </div>
+            </a>
 
+            <a href="sub.html">
+              <div id="artifour">
+                <p>contact us</p>
+                <p>CONTACT</p>
+                <div class="line"></div>
+              </div>
+            </a>
+          </div>
+        </article>
 
-            <article id="sewraptwo">
-                
-                    <a href="sub.html" class="twoOfOne">
-                        <div id="asitwo">
-                            <div class="asitwop">
-                                <p>product story</p>
-                                <p>SHOPPING STORY</p>
-                            </div>
-                            <div class="asitwoimg">
-                                <img src="img/main/tamburins_logo_coltwo.png" alt="verticallogo">
-                            </div>
-                        </div>
-                    </a>
-                
-                <div id="articlewraptwo">
-                    <a href="sub.html">
-                        <div id="artithr">
-                            <p>about TAMBURINS</p>
-                            <p>NOTICE / Q & A</p>
-                            <div class="line"></div>
-                        </div>
-                    </a>
+        <div id="bannertwo">
+          <div id="slidewrap">
+            <ul class="slide">
+              <li><img src="img/main/nudehandcream.png" alt="poster" /></li>
 
-                    <a href="sub.html">
-                        <div id="artifour">
-                            <p>contact us</p>
-                            <p>CONTACT</p>
-                            <div class="line"></div>
-                        </div>
-                    </a>
-                </div>
+              <li><img src="img/main/tam.png" alt="room" /></li>
 
-            </article>
+              <li><img src="img/main/pic.png" alt="black" /></li>
 
-            <div id="bannertwo">
-                <div id="slidewrap">
-                    <ul class="slide">
-                        <li><img src="img/main/nudehandcream.png" alt="poster"></li>
+              <li><img src="img/main/bunnycandle.png" alt="shell" /></li>
 
-                        <li><img src="img/main/tam.png"  alt="room"></li>
-                        
-                        <li><img src="img/main/pic.png"  alt="black"></li>
+              <li>
+                <img src="img/main/glassdiffuser.png" alt="glassdiffuser" />
+              </li>
 
-                        <li><img src="img/main/bunnycandle.png" alt="shell"></li>
+              <li>
+                <img
+                  src="img/main/glassdiffuserfive.png"
+                  alt="glassdiffuserfive"
+                />
+              </li>
 
-                        <li><img src="img/main/glassdiffuser.png" alt="glassdiffuser"></li>
+              <li>
+                <img
+                  src="img/main/glassdiffuserfour.png"
+                  alt="glassdiffuserfour"
+                />
+              </li>
 
-                        <li><img src="img/main/glassdiffuserfive.png" alt="glassdiffuserfive"></li>
+              <li>
+                <img
+                  src="img/main/glassdiffusersix.png"
+                  alt="glassdiffusersix"
+                />
+              </li>
 
-                        <li><img src="img/main/glassdiffuserfour.png"  alt="glassdiffuserfour"></li>
-                        
-                        <li><img src="img/main/glassdiffusersix.png"  alt="glassdiffusersix"></li>
+              <li>
+                <img
+                  src="img/main/glassdiffuserthr.png"
+                  alt="glassdiffuserthr"
+                />
+              </li>
 
-                        <li><img src="img/main/glassdiffuserthr.png" alt="glassdiffuserthr"></li>
-                
-                        <li><img src="img/main/glassdiffusertwo.png" alt="glassdiffusertwo"></li>
+              <li>
+                <img
+                  src="img/main/glassdiffusertwo.png"
+                  alt="glassdiffusertwo"
+                />
+              </li>
 
-                        <li><img src="img/main/912.png" alt="red"></li>
-                
-                        <li><img src="img/main/picthr.png" alt="picthr"></li>
+              <li><img src="img/main/912.png" alt="red" /></li>
 
-                        <li><img src="img/main/pvc.png" alt="pvc"></li>
+              <li><img src="img/main/picthr.png" alt="picthr" /></li>
 
-                        <li><img src="img/main/creamon.png" alt="cream"></li>
+              <li><img src="img/main/pvc.png" alt="pvc" /></li>
 
-                        <li><img src="img/main/284.png" alt="orange"></li>
+              <li><img src="img/main/creamon.png" alt="cream" /></li>
 
-                        <li><img src="img/main/window.png" alt="window"></li>
+              <li><img src="img/main/284.png" alt="orange" /></li>
 
-                        <li><img src="img/main/flowertwo.png" alt="flowertwo"></li>
+              <li><img src="img/main/window.png" alt="window" /></li>
 
-                        <li><img src="img/main/nudehandcreamtwo.png" alt="nudehandcream"></li>
+              <li><img src="img/main/flowertwo.png" alt="flowertwo" /></li>
 
-                        <li><img src="img/main/flowerthr.png" alt="flowerthr"></li>
-                    </ul>
-              
-                    <span class="prev">&lt;</span>
-                    <span class="next">&gt;</span>
-              
-                </div>
-            </div>
-        </section>
+              <li>
+                <img src="img/main/nudehandcreamtwo.png" alt="nudehandcream" />
+              </li>
 
-        <footer>
-            <h1>Visual and tactile pleasure</h1><br>
-            <h4>TAMBURINS CEO<span>김한국</span></h4><br>
-            <span><b>Email</b>&nbsp;&nbsp;&nbsp;cs@tamburins.com<strong>&nbsp;&nbsp;&nbsp;&nbsp;|</strong></span>
-            <span><b>C/S</b>&nbsp;&nbsp;&nbsp;1644-1246&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
-            <span><b>Mall Order License</b>&nbsp;&nbsp;&nbsp;제 2014-서울마포-1050 호 &#91;사업자정보확인&#93;<strong>&nbsp;&nbsp;&nbsp;&nbsp;|</strong></span>
-            <span><b>Business License</b> &nbsp;&nbsp;&nbsp;-86-38589&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
-            <span><b>Adress</b>&nbsp;&nbsp;&nbsp;서울특별시 마포구 어울마당로5길 41(41, Eoulmadang-ro 5-gil, Mapo-gu, Seoul, Republic of Korea)</span><br><br>
-            <p>© TAMBURINS KR</p>
-        </footer>
+              <li><img src="img/main/flowerthr.png" alt="flowerthr" /></li>
+            </ul>
+
+            <span class="prev">&lt;</span>
+            <span class="next">&gt;</span>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <h1>Visual and tactile pleasure</h1>
+        <br />
+        <h4>TAMBURINS CEO<span>김한국</span></h4>
+        <br />
+        <span
+          ><b>Email</b>&nbsp;&nbsp;&nbsp;cs@tamburins.com<strong
+            >&nbsp;&nbsp;&nbsp;&nbsp;|</strong
+          ></span
+        >
+        <span
+          ><b>C/S</b>&nbsp;&nbsp;&nbsp;1644-1246&nbsp;&nbsp;&nbsp;&nbsp;</span
+        ><br />
+        <span
+          ><b>Mall Order License</b>&nbsp;&nbsp;&nbsp;제 2014-서울마포-1050 호
+          &#91;사업자정보확인&#93;<strong
+            >&nbsp;&nbsp;&nbsp;&nbsp;|</strong
+          ></span
+        >
+        <span
+          ><b>Business License</b>
+          &nbsp;&nbsp;&nbsp;-86-38589&nbsp;&nbsp;&nbsp;&nbsp;</span
+        ><br />
+        <span
+          ><b>Adress</b>&nbsp;&nbsp;&nbsp;서울특별시 마포구 어울마당로5길 41(41,
+          Eoulmadang-ro 5-gil, Mapo-gu, Seoul, Republic of Korea)</span
+        ><br /><br />
+        <p>© TAMBURINS KR</p>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
